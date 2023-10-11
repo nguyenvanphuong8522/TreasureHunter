@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 55ecddf046dbd174a99885953b916828
+guid: b1cb153ff13e80145917208e769cec59
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,9 +71,9 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -83,9 +83,9 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638322707212837705
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
-    spriteID: d83bdbcb6d4524945b965f439d0e6c0f
+    spriteID: c9abd32a15b1e0549a8baa5e7947431f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
-    spriteID: 0f600e73c7942e3478d1ea2219e66b3a
+    spriteID: 4b4306dad10f5264e957c98470745fd8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 212
       width: 96
       height: 96
-    spriteID: 2ab461a18121c794295157e5fb84eba3
+    spriteID: 9b0fd07c79b35aa408843fa76db47fd6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 316
       width: 96
       height: 96
-    spriteID: b9b2a42942a8aef42b09d24cbe81b673
+    spriteID: d7741b4dca607b5489ce52c9a7359e05
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 420
       width: 96
       height: 96
-    spriteID: 21b34583e7f07254787404ba6d678b21
+    spriteID: 3d2d57ae18cfee846a028e347fa37424
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 524
       width: 96
       height: 96
-    spriteID: 0511bd4e64c710840a09e6f196603cda
+    spriteID: 022bec21b24213d4eab2525d0347e5a8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 628
       width: 96
       height: 96
-    spriteID: 2bc9f745ad8b1604a9b47974a3a423ea
+    spriteID: 96c0ed5ce1a2d49419d95fc1ab4c2df4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 732
       width: 96
       height: 96
-    spriteID: 86fe6dacbbaaefe42811a94a3b5ca9b8
+    spriteID: 3a20f0429d8da5d40bb578334d5512e1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -290,7 +290,7 @@ ScriptedImporter:
       y: 836
       width: 96
       height: 96
-    spriteID: 3d398c27b9d51544d84a3037f5a393bb
+    spriteID: b5c2af76bc5e75e44a68b9fada6f7fc3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -310,7 +310,7 @@ ScriptedImporter:
       y: 940
       width: 96
       height: 96
-    spriteID: 28dde860e6ca7414080522f944856d14
+    spriteID: f519ccc696477884182cd3fe14d21b72
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -330,7 +330,7 @@ ScriptedImporter:
       y: 1044
       width: 96
       height: 96
-    spriteID: 18aae27abecc65a488a373459ec60669
+    spriteID: 5f56e22a0423b54468c3fb0a88763627
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -350,7 +350,7 @@ ScriptedImporter:
       y: 1148
       width: 96
       height: 96
-    spriteID: d4240e6ca2fc8fc44960e548feff2040
+    spriteID: 56d3d302729ed2a40986fc83346f4f77
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -370,7 +370,7 @@ ScriptedImporter:
       y: 1252
       width: 96
       height: 96
-    spriteID: 012e79b005eefa447bafb5a1c68b929d
+    spriteID: 39b4d354946e6524c9a4e7fc7696c3f6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -390,7 +390,7 @@ ScriptedImporter:
       y: 1356
       width: 96
       height: 96
-    spriteID: f90b9e2565450cf49ad6bd67525f2d6b
+    spriteID: 9ba92bc5b2ddadd44888fbfb8e1f96d6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -410,7 +410,7 @@ ScriptedImporter:
       y: 1460
       width: 96
       height: 96
-    spriteID: a595c0425959784449bd64016446065a
+    spriteID: 41c3b9ff8c368de4e8514086e8d50d5b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -430,7 +430,7 @@ ScriptedImporter:
       y: 1564
       width: 96
       height: 96
-    spriteID: 77982ba6785aa104cad39b0f7b604aa2
+    spriteID: b683262646e53554a998ab8e8ba6fed5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -450,7 +450,7 @@ ScriptedImporter:
       y: 1668
       width: 96
       height: 96
-    spriteID: 2be1f881a79b01d499d59e0aab2b369c
+    spriteID: 4f33243eedea2c04ea5866bf24ed29cf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -470,7 +470,7 @@ ScriptedImporter:
       y: 1772
       width: 96
       height: 96
-    spriteID: ca4bfdfffe5480449ab8023aa103f3c3
+    spriteID: 441128464bbd29c43a945a08ac452671
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -490,7 +490,7 @@ ScriptedImporter:
       y: 1876
       width: 96
       height: 96
-    spriteID: 050d72c1ad3a7cc4f9b462eff9d52568
+    spriteID: 4c8d812ea8342c84daf72116ed48e3e7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -510,7 +510,7 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
-    spriteID: 817dfc803dff42141a32792df16fa754
+    spriteID: b3ac5e903363300478d1539198e2c601
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -530,7 +530,7 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
-    spriteID: a09272c3fb8d53d46ad7317e63904298
+    spriteID: 9fcf83d11149e2e4882cb5212188ae29
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -550,7 +550,7 @@ ScriptedImporter:
       y: 212
       width: 96
       height: 96
-    spriteID: 788ac3cdaf4c79e418c30c47273fe024
+    spriteID: 40106d3c3988f674a92d29227bb27662
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -570,7 +570,7 @@ ScriptedImporter:
       y: 316
       width: 96
       height: 96
-    spriteID: 26f60c0706e65624499656194a0934fb
+    spriteID: 0348e138e55bf6f43af85edd75cec8e8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -590,7 +590,7 @@ ScriptedImporter:
       y: 420
       width: 96
       height: 96
-    spriteID: 1dca50d5886d30e46a8a2d1ecf4caea0
+    spriteID: 54cbcd8b2629ed74d9676a58689f1a66
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -610,7 +610,7 @@ ScriptedImporter:
       y: 524
       width: 96
       height: 96
-    spriteID: dd641668d5586e641a563e36d3702a85
+    spriteID: 7b8335041ac9302409ac8b2d6dccba71
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -630,7 +630,7 @@ ScriptedImporter:
       y: 628
       width: 96
       height: 96
-    spriteID: bead05c4d90effa4cbf810595a347e28
+    spriteID: 2678c5f49bd4040499aac61a6bba7cf6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -650,7 +650,7 @@ ScriptedImporter:
       y: 732
       width: 96
       height: 96
-    spriteID: 890d3fadbd02848428239df052b97a3c
+    spriteID: 1c61e1e2234ebcc4cbb842a3600119ed
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -670,7 +670,7 @@ ScriptedImporter:
       y: 836
       width: 96
       height: 96
-    spriteID: 28d13f4111a60ac4ba4300503147f738
+    spriteID: cabcfd705b612af47a83843b3a66b47d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -690,7 +690,7 @@ ScriptedImporter:
       y: 940
       width: 96
       height: 96
-    spriteID: cb5a8e0040555dc41936353920db427f
+    spriteID: ccd836d6b4caed84fa5b41dad8cfb849
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -710,7 +710,7 @@ ScriptedImporter:
       y: 1044
       width: 96
       height: 96
-    spriteID: 9fbe70a392f9cdc4f87d7498a86e6f8f
+    spriteID: 0b7bce76fbea6e543ac01a39fef751e4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -730,7 +730,7 @@ ScriptedImporter:
       y: 1148
       width: 96
       height: 96
-    spriteID: 30970303c32737b40bc23c8b8968689a
+    spriteID: aee8b18f8703ea143aa5d811fbe8d226
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -750,7 +750,7 @@ ScriptedImporter:
       y: 1252
       width: 96
       height: 96
-    spriteID: aa464a132f8b84f42915971d0f661abc
+    spriteID: a7ce1db8af090974892d967be42094ec
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -770,7 +770,7 @@ ScriptedImporter:
       y: 1356
       width: 96
       height: 96
-    spriteID: 468d6971d8e3a4544977aae088a1dfa7
+    spriteID: 4b2780a81845b7e4dad67356cc20f785
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -790,7 +790,7 @@ ScriptedImporter:
       y: 1460
       width: 96
       height: 96
-    spriteID: 2620a91bf6e322f46afb80aebdc5ec2d
+    spriteID: e6c5d292b2dd72647a472775e63b3278
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -810,7 +810,7 @@ ScriptedImporter:
       y: 1564
       width: 96
       height: 96
-    spriteID: 64f762fc22647cf4bbbe8b319cd05281
+    spriteID: f0d168bf69dfe8e41a2308df3e809d07
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -830,7 +830,7 @@ ScriptedImporter:
       y: 1668
       width: 96
       height: 96
-    spriteID: 865d03414cd92c542a18d300aea707aa
+    spriteID: 8d2ff617d659238468ff453ab6bba270
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -850,7 +850,7 @@ ScriptedImporter:
       y: 1772
       width: 96
       height: 96
-    spriteID: 6da83443057daec4ca098576e5f45d3b
+    spriteID: 59a1aa2410f48ff4ea04f523bf9cbbd5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -870,7 +870,7 @@ ScriptedImporter:
       y: 1876
       width: 96
       height: 96
-    spriteID: fd71f843f2d0772489376ee0b8a803f8
+    spriteID: 99e5019aeeeb95047a75d2fb8b54a7c8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -890,7 +890,7 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
-    spriteID: b58d66deacf18b340a085f9c6104e0b2
+    spriteID: fca687cc661b19e45b197163449aa4ef
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -910,7 +910,7 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
-    spriteID: 83e465b8184dab84caa26a0861bb60bc
+    spriteID: c45ab45cd73b95a4e9c49ca0993097f3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -930,7 +930,7 @@ ScriptedImporter:
       y: 212
       width: 96
       height: 96
-    spriteID: 45a436031b671de4895015182e6ce38e
+    spriteID: ae87af21260286b4ca34bbd9dd863b29
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -950,7 +950,7 @@ ScriptedImporter:
       y: 316
       width: 96
       height: 96
-    spriteID: 95704dbcf24435a4eace5ee82caf4987
+    spriteID: a942b7e19a44e7943ae4db3c539e44e5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -970,7 +970,7 @@ ScriptedImporter:
       y: 420
       width: 96
       height: 96
-    spriteID: 0db51015023c06b4e92add00466bee5c
+    spriteID: 94665a493f8e8ee4997dd807c58dfe34
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -990,7 +990,7 @@ ScriptedImporter:
       y: 524
       width: 96
       height: 96
-    spriteID: b4475677ea83c91449eeb73cbb15835c
+    spriteID: 05e8a48d3b054a34fa9cfc3bb68869fd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1010,7 +1010,7 @@ ScriptedImporter:
       y: 628
       width: 96
       height: 96
-    spriteID: f138f85ee0322064c9a5b1cd8c7f8980
+    spriteID: e7ba3192b18d33149853838f226005ce
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1030,7 +1030,7 @@ ScriptedImporter:
       y: 732
       width: 96
       height: 96
-    spriteID: e0b7dfc66aaf9ef49a4e604c724114bd
+    spriteID: f29d9fa810e887b46a69eaed74e20d7d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1050,7 +1050,7 @@ ScriptedImporter:
       y: 836
       width: 96
       height: 96
-    spriteID: 981ab3b585c46394a82690fa7bc0e4f2
+    spriteID: 4aa1eeda9c9a33749a7cd157d851fbee
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1070,7 +1070,7 @@ ScriptedImporter:
       y: 940
       width: 96
       height: 96
-    spriteID: dbd12958cd941834db5f1fffcd3827d4
+    spriteID: 349e1f6816cbed2419327cd95c1b55de
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1090,7 +1090,7 @@ ScriptedImporter:
       y: 1044
       width: 96
       height: 96
-    spriteID: ace87749cf2ff074e95b7cc08faa230a
+    spriteID: 5a37bb260e51f1e4095d5e071761ab18
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1110,7 +1110,7 @@ ScriptedImporter:
       y: 1148
       width: 96
       height: 96
-    spriteID: ed5fa28d2cb0cf24cac4e97765c045de
+    spriteID: 24f733467bf1ed444ba9925ff3f3b156
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1130,7 +1130,7 @@ ScriptedImporter:
       y: 1252
       width: 96
       height: 96
-    spriteID: e6f738cc4cfea1440befcdf0c44e20c2
+    spriteID: b53c558ffc70bfe429bb3cb9b1c1cdce
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1150,7 +1150,7 @@ ScriptedImporter:
       y: 1356
       width: 96
       height: 96
-    spriteID: 5cd282659f456b749a1dfd1b28023cfb
+    spriteID: b31271150b5e9b54ca7f66073ea1328d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1170,7 +1170,7 @@ ScriptedImporter:
       y: 1460
       width: 96
       height: 96
-    spriteID: 3e0e7c3033c27104db2b9ef5ad933652
+    spriteID: 1b37955e8a7c76c48a470e3897bce3c9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1190,7 +1190,7 @@ ScriptedImporter:
       y: 1564
       width: 96
       height: 96
-    spriteID: 84289067af3458b44a6a010c64a76c62
+    spriteID: 733158fd38a17c545ba095fda429b894
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1210,7 +1210,7 @@ ScriptedImporter:
       y: 1668
       width: 96
       height: 96
-    spriteID: 557286e007b5cc74fbcc7e38da5480d8
+    spriteID: a6bcf73874efb164db29e1c501283c9e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1230,7 +1230,7 @@ ScriptedImporter:
       y: 1772
       width: 96
       height: 96
-    spriteID: 62bebcad1a6f8f44bb8e0e68da5e563f
+    spriteID: 01bf6a86bfd6fa445b8d337098c15222
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1250,7 +1250,7 @@ ScriptedImporter:
       y: 1876
       width: 96
       height: 96
-    spriteID: 6cff5b8b48080c44cb2f08bce9978d98
+    spriteID: 8d8fed5b1e7799948bd32bd29cbf53c3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1270,7 +1270,7 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
-    spriteID: 44ac887d21c0a7f44b083ca53760ab11
+    spriteID: 7f257dc8f369f1545b0a98dfc242daf5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1290,7 +1290,7 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
-    spriteID: 5bc98db571b2ad148ba32603a31d978b
+    spriteID: 0750531a2289f744d95cf86b5a98a691
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1310,7 +1310,7 @@ ScriptedImporter:
       y: 212
       width: 96
       height: 96
-    spriteID: a21abbef6dac9a74d86eb838035629a2
+    spriteID: 3892a78291a45bd4997ac82dff6b12b7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1330,7 +1330,7 @@ ScriptedImporter:
       y: 316
       width: 96
       height: 96
-    spriteID: d9fb05a00521f5740a3bf047881b6998
+    spriteID: 371a7fefee94772418e5a089187aa797
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1350,7 +1350,7 @@ ScriptedImporter:
       y: 420
       width: 96
       height: 96
-    spriteID: 465a7693882eb3147ad42ad03b853d96
+    spriteID: 700251f52792ddc46ac51db1ad2e80c8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1370,7 +1370,7 @@ ScriptedImporter:
       y: 524
       width: 96
       height: 96
-    spriteID: 28cc6b99b6944c84fb6e4b2facb6a643
+    spriteID: 5248875ae041b87478756ddd49cbc79d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1390,7 +1390,7 @@ ScriptedImporter:
       y: 628
       width: 96
       height: 96
-    spriteID: 51988b56d9b42c04894bc24b27e68368
+    spriteID: 39bb76ea27ef77c41b887dcba1573156
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1410,7 +1410,7 @@ ScriptedImporter:
       y: 732
       width: 96
       height: 96
-    spriteID: 81f378d327772884baf2cc11dc8858c3
+    spriteID: ec46b5567727d584d8a02521bdfae6f7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1430,7 +1430,7 @@ ScriptedImporter:
       y: 836
       width: 96
       height: 96
-    spriteID: 1c1b79b35157c5944920701b68dab58e
+    spriteID: ada5c2b53aa47c44fba5466e441a6c53
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1450,7 +1450,7 @@ ScriptedImporter:
       y: 940
       width: 96
       height: 96
-    spriteID: c6c914ae82710494597548ed46c8a9db
+    spriteID: e053667e5587d9348a42891e3aafd7cd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1470,7 +1470,7 @@ ScriptedImporter:
       y: 1044
       width: 96
       height: 96
-    spriteID: a97a3c9d90dd6c04da1eb7b06b5fd304
+    spriteID: c30ef8b1622338946b70570ced88dc66
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1490,7 +1490,7 @@ ScriptedImporter:
       y: 1148
       width: 96
       height: 96
-    spriteID: 5696374b1e9fb1c459b1611fde0061fa
+    spriteID: 08c839637266af04cb67d344058ab680
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1510,7 +1510,7 @@ ScriptedImporter:
       y: 1252
       width: 96
       height: 96
-    spriteID: 5111ff759f9f24b438710f457e134483
+    spriteID: 8b4108955dcd7e044b29648a3527873f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1530,7 +1530,7 @@ ScriptedImporter:
       y: 1356
       width: 96
       height: 96
-    spriteID: 9cc96bc03a1cf8d4d96cb389ef0857ab
+    spriteID: 03319d5b93439eb47aa5f81da5f51d3b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1550,7 +1550,7 @@ ScriptedImporter:
       y: 1460
       width: 96
       height: 96
-    spriteID: ef1b84b38f2cbba40b05eb74d6d6733b
+    spriteID: a92db64a2d4c3f7429ec3b044e5218ad
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1570,7 +1570,7 @@ ScriptedImporter:
       y: 1564
       width: 96
       height: 96
-    spriteID: b551e7f1fb1f1034ab3b99514bdb1c9f
+    spriteID: f2f7aaca0c2c9ef4b8d8a308480c471b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1590,7 +1590,7 @@ ScriptedImporter:
       y: 1668
       width: 96
       height: 96
-    spriteID: 72d9a9baa17b3834d8f8b6b8c68ac1d1
+    spriteID: c263dd93aa90c3c4288540c801e3d5a2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1610,7 +1610,7 @@ ScriptedImporter:
       y: 1772
       width: 96
       height: 96
-    spriteID: 761a38f5732ae3d41b4458c53b6a9cb5
+    spriteID: e8cc8676b6a804b4682d995e98e6b006
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1630,7 +1630,7 @@ ScriptedImporter:
       y: 1876
       width: 96
       height: 96
-    spriteID: d394001393f348c4cb75cfe3a4080490
+    spriteID: 22e13fedb1f87c94da891a8b7f314457
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1650,7 +1650,7 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
-    spriteID: d49de386243515a41b3b63a723a21f38
+    spriteID: 3e4eb446a5d958b4da69699e9324df66
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1670,7 +1670,7 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
-    spriteID: 0d654eebfec85a34388d2418b391fed0
+    spriteID: 15b95328f0185ff41aa89de1ec341ef6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1690,7 +1690,7 @@ ScriptedImporter:
       y: 212
       width: 96
       height: 96
-    spriteID: ae95f3c4e6b715d41b1234f71db436da
+    spriteID: cd50974b89933da40989fa34151fc6a6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1710,7 +1710,7 @@ ScriptedImporter:
       y: 316
       width: 96
       height: 96
-    spriteID: f7acbfa5bedd217468a97f406d4190dd
+    spriteID: badf9794850aa9741a5307dcad0d0023
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1730,7 +1730,7 @@ ScriptedImporter:
       y: 420
       width: 96
       height: 96
-    spriteID: b6d4ca286ace31f4aa17d7625f2e3749
+    spriteID: 26b223339a97f7f438e4cb99385a6257
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1750,7 +1750,7 @@ ScriptedImporter:
       y: 524
       width: 96
       height: 96
-    spriteID: c2d0be957189cbc4ab72bdf0ef1e3a51
+    spriteID: 88486ed06e1f3314db89d0d89d9298d1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1770,7 +1770,7 @@ ScriptedImporter:
       y: 628
       width: 96
       height: 96
-    spriteID: 480a1f67314c7ca41a22ef90fa00ddf1
+    spriteID: d6d896ea38e788d4482ad2572074068c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1790,7 +1790,7 @@ ScriptedImporter:
       y: 732
       width: 96
       height: 96
-    spriteID: abfb5a2da8bee0845aca0cefc4c52b3f
+    spriteID: 0c617e9a175ba334b80bec60d66cf0fb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1802,687 +1802,1529 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 722340886
-    name: Captain Clown Nose
-    layerFlags: 0
+    guid: -254172158
+    name: Grid
+    layerFlags: 1
     layerType: 0
     blendMode: 0
     cells:
-    - name: Captain Clown Nose_Frame_0
+    - name: Grid_Frame_0
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: d83bdbcb6d4524945b965f439d0e6c0f
-    - name: Captain Clown Nose_Frame_1
+      spriteId: 93b1c976873356a40ab6efcf37cfae13
+    - name: Grid_Frame_1
       frameIndex: 1
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 0f600e73c7942e3478d1ea2219e66b3a
-    - name: Captain Clown Nose_Frame_2
+      spriteId: 70d30adc310efd740a0278726e932aa2
+    - name: Grid_Frame_2
       frameIndex: 2
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 2ab461a18121c794295157e5fb84eba3
-    - name: Captain Clown Nose_Frame_3
+      spriteId: 7913e482c54189a478e32696170b9fd6
+    - name: Grid_Frame_3
       frameIndex: 3
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: b9b2a42942a8aef42b09d24cbe81b673
-    - name: Captain Clown Nose_Frame_4
+      spriteId: 91a901d674e131a4cb7093dcb25811ac
+    - name: Grid_Frame_4
       frameIndex: 4
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 21b34583e7f07254787404ba6d678b21
-    - name: Captain Clown Nose_Frame_5
+      spriteId: 61dd20e2ce32cd944921bc41d53196d3
+    - name: Grid_Frame_5
       frameIndex: 5
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 0511bd4e64c710840a09e6f196603cda
-    - name: Captain Clown Nose_Frame_6
+      spriteId: ee4617dee5d2c3b4d955d2733f28d160
+    - name: Grid_Frame_6
       frameIndex: 6
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 2bc9f745ad8b1604a9b47974a3a423ea
-    - name: Captain Clown Nose_Frame_7
+      spriteId: 8135b84e5de43724b98e1d4a7767c484
+    - name: Grid_Frame_7
       frameIndex: 7
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 86fe6dacbbaaefe42811a94a3b5ca9b8
-    - name: Captain Clown Nose_Frame_8
+      spriteId: e4ef986c971f53840915d635a9960dfd
+    - name: Grid_Frame_8
       frameIndex: 8
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 3d398c27b9d51544d84a3037f5a393bb
-    - name: Captain Clown Nose_Frame_9
+      spriteId: 83342a4c2b8c40947b3984dfe7eb4ef9
+    - name: Grid_Frame_9
       frameIndex: 9
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 28dde860e6ca7414080522f944856d14
-    - name: Captain Clown Nose_Frame_10
+      spriteId: 8dbce409d1a73b14ea4221aad1041c10
+    - name: Grid_Frame_10
       frameIndex: 10
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 18aae27abecc65a488a373459ec60669
-    - name: Captain Clown Nose_Frame_11
+      spriteId: 80737208ca9466646b608d84816ff039
+    - name: Grid_Frame_11
       frameIndex: 11
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: d4240e6ca2fc8fc44960e548feff2040
-    - name: Captain Clown Nose_Frame_12
+      spriteId: 3938114b1b11ca04b809619fede4ec5f
+    - name: Grid_Frame_12
       frameIndex: 12
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 012e79b005eefa447bafb5a1c68b929d
-    - name: Captain Clown Nose_Frame_13
+      spriteId: 437d2cd997acdb44593c346d663bcc04
+    - name: Grid_Frame_13
       frameIndex: 13
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: f90b9e2565450cf49ad6bd67525f2d6b
-    - name: Captain Clown Nose_Frame_14
+      spriteId: f219f9e21578b6846b038b89c039cde8
+    - name: Grid_Frame_14
       frameIndex: 14
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: a595c0425959784449bd64016446065a
-    - name: Captain Clown Nose_Frame_15
+      spriteId: 002d66f2017cdb04c81ca36425137653
+    - name: Grid_Frame_15
       frameIndex: 15
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 77982ba6785aa104cad39b0f7b604aa2
-    - name: Captain Clown Nose_Frame_16
+      spriteId: 2d0fb79d3cf3bc64397ac9d92cd37284
+    - name: Grid_Frame_16
       frameIndex: 16
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 2be1f881a79b01d499d59e0aab2b369c
-    - name: Captain Clown Nose_Frame_17
+      spriteId: 3cd1ad2273e5d4c4b8d592a2dc913671
+    - name: Grid_Frame_17
       frameIndex: 17
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: ca4bfdfffe5480449ab8023aa103f3c3
-    - name: Captain Clown Nose_Frame_18
+      spriteId: a88c84557638ad946b9e9cfe8a2f5b91
+    - name: Grid_Frame_18
       frameIndex: 18
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 050d72c1ad3a7cc4f9b462eff9d52568
-    - name: Captain Clown Nose_Frame_19
+      spriteId: e7a5e2e79f76f1640b8c8b1b96b6879e
+    - name: Grid_Frame_19
       frameIndex: 19
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 817dfc803dff42141a32792df16fa754
-    - name: Captain Clown Nose_Frame_20
+      spriteId: 79df18b85d5d4334685dc78728962bf3
+    - name: Grid_Frame_20
       frameIndex: 20
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: a09272c3fb8d53d46ad7317e63904298
-    - name: Captain Clown Nose_Frame_21
+      spriteId: 860d6f82f1e5f2f489a50d8585fc9deb
+    - name: Grid_Frame_21
       frameIndex: 21
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 788ac3cdaf4c79e418c30c47273fe024
-    - name: Captain Clown Nose_Frame_22
+      spriteId: 9775308bc6e2e5d4b8d72e7b4ea40542
+    - name: Grid_Frame_22
       frameIndex: 22
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 26f60c0706e65624499656194a0934fb
-    - name: Captain Clown Nose_Frame_23
+      spriteId: 00060518ba3ac33419a642fd65cb205d
+    - name: Grid_Frame_23
       frameIndex: 23
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 1dca50d5886d30e46a8a2d1ecf4caea0
-    - name: Captain Clown Nose_Frame_24
+      spriteId: f15fffe6220047c4282df7526da3a534
+    - name: Grid_Frame_24
       frameIndex: 24
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: dd641668d5586e641a563e36d3702a85
-    - name: Captain Clown Nose_Frame_25
+      spriteId: e97a78a7aba939849801c3456f931589
+    - name: Grid_Frame_25
       frameIndex: 25
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: bead05c4d90effa4cbf810595a347e28
-    - name: Captain Clown Nose_Frame_26
+      spriteId: 019369accd431fb4299d6ad2a730ea9f
+    - name: Grid_Frame_26
       frameIndex: 26
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 890d3fadbd02848428239df052b97a3c
-    - name: Captain Clown Nose_Frame_27
+      spriteId: d73932308bb78f7418be3f43beae5702
+    - name: Grid_Frame_27
       frameIndex: 27
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 28d13f4111a60ac4ba4300503147f738
-    - name: Captain Clown Nose_Frame_28
+      spriteId: cf62c61781d7fb64ebea6a8d6d582d3f
+    - name: Grid_Frame_28
       frameIndex: 28
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: cb5a8e0040555dc41936353920db427f
-    - name: Captain Clown Nose_Frame_29
+      spriteId: bb4d39651a19a0349a7ba47ca621ea53
+    - name: Grid_Frame_29
       frameIndex: 29
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 9fbe70a392f9cdc4f87d7498a86e6f8f
-    - name: Captain Clown Nose_Frame_30
+      spriteId: 40aff32ff4b9bf041839d67d1fc655e8
+    - name: Grid_Frame_30
       frameIndex: 30
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 30970303c32737b40bc23c8b8968689a
-    - name: Captain Clown Nose_Frame_31
+      spriteId: e65093b2a79f93d48b771ffe04e391dd
+    - name: Grid_Frame_31
       frameIndex: 31
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: aa464a132f8b84f42915971d0f661abc
-    - name: Captain Clown Nose_Frame_32
+      spriteId: 1fea06d5d28f40d408b8dd809f8dba1c
+    - name: Grid_Frame_32
       frameIndex: 32
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 468d6971d8e3a4544977aae088a1dfa7
-    - name: Captain Clown Nose_Frame_33
+      spriteId: 21442d8c1e1e9d0439f62d22b8e17372
+    - name: Grid_Frame_33
       frameIndex: 33
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 2620a91bf6e322f46afb80aebdc5ec2d
-    - name: Captain Clown Nose_Frame_34
+      spriteId: 64f594bc41ca0d54e83874a42be260ed
+    - name: Grid_Frame_34
       frameIndex: 34
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 64f762fc22647cf4bbbe8b319cd05281
-    - name: Captain Clown Nose_Frame_35
+      spriteId: d87904e420912184eabcacbae27f759e
+    - name: Grid_Frame_35
       frameIndex: 35
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 865d03414cd92c542a18d300aea707aa
-    - name: Captain Clown Nose_Frame_36
+      spriteId: 268c36bb69970b347963e4b279bc21dc
+    - name: Grid_Frame_36
       frameIndex: 36
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 6da83443057daec4ca098576e5f45d3b
-    - name: Captain Clown Nose_Frame_37
+      spriteId: 9499e61fec87b1c4aa0545359e35b0fb
+    - name: Grid_Frame_37
       frameIndex: 37
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: fd71f843f2d0772489376ee0b8a803f8
-    - name: Captain Clown Nose_Frame_38
+      spriteId: 5485a898d1fc6394bad531f3ada55f68
+    - name: Grid_Frame_38
       frameIndex: 38
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: b58d66deacf18b340a085f9c6104e0b2
-    - name: Captain Clown Nose_Frame_39
+      spriteId: 32774d4c8a4ee9442a56a8c48610d3d0
+    - name: Grid_Frame_39
       frameIndex: 39
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 83e465b8184dab84caa26a0861bb60bc
-    - name: Captain Clown Nose_Frame_40
+      spriteId: 129c9661c4b514244b92c21cb6dfbd88
+    - name: Grid_Frame_40
       frameIndex: 40
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 45a436031b671de4895015182e6ce38e
-    - name: Captain Clown Nose_Frame_41
+      spriteId: 02302062621023545a1963e309452125
+    - name: Grid_Frame_41
       frameIndex: 41
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 95704dbcf24435a4eace5ee82caf4987
-    - name: Captain Clown Nose_Frame_42
+      spriteId: 595fa909d3f8ad14b87a8ac034c3b785
+    - name: Grid_Frame_42
       frameIndex: 42
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 0db51015023c06b4e92add00466bee5c
-    - name: Captain Clown Nose_Frame_43
+      spriteId: 0acaf0fe11323bb49a7da7f7ba5aad49
+    - name: Grid_Frame_43
       frameIndex: 43
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: b4475677ea83c91449eeb73cbb15835c
-    - name: Captain Clown Nose_Frame_44
+      spriteId: 6abf3e51b35338f4386184380de41028
+    - name: Grid_Frame_44
       frameIndex: 44
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: f138f85ee0322064c9a5b1cd8c7f8980
-    - name: Captain Clown Nose_Frame_45
+      spriteId: 360b656fb8ccd5543b103c9c959789c5
+    - name: Grid_Frame_45
       frameIndex: 45
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: e0b7dfc66aaf9ef49a4e604c724114bd
-    - name: Captain Clown Nose_Frame_46
+      spriteId: 18df998d06bb5ea459534e1d0eb3bd01
+    - name: Grid_Frame_46
       frameIndex: 46
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 981ab3b585c46394a82690fa7bc0e4f2
-    - name: Captain Clown Nose_Frame_47
+      spriteId: 533828dad0177844381fc0a0ce98e04d
+    - name: Grid_Frame_47
       frameIndex: 47
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: dbd12958cd941834db5f1fffcd3827d4
-    - name: Captain Clown Nose_Frame_48
+      spriteId: 91e845283ceb97945a7d9d8b70ca3485
+    - name: Grid_Frame_48
       frameIndex: 48
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: ace87749cf2ff074e95b7cc08faa230a
-    - name: Captain Clown Nose_Frame_49
+      spriteId: 98f7b0c73ffd661409c5824cdf658212
+    - name: Grid_Frame_49
       frameIndex: 49
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: ed5fa28d2cb0cf24cac4e97765c045de
-    - name: Captain Clown Nose_Frame_50
+      spriteId: 29ef125f4ad813043b787b46b13aad07
+    - name: Grid_Frame_50
       frameIndex: 50
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: e6f738cc4cfea1440befcdf0c44e20c2
-    - name: Captain Clown Nose_Frame_51
+      spriteId: cbc674e15c0f4fe4cb4b61aa20812e56
+    - name: Grid_Frame_51
       frameIndex: 51
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 5cd282659f456b749a1dfd1b28023cfb
-    - name: Captain Clown Nose_Frame_52
+      spriteId: 4ec3a8425dbf22248888cc45952a78ec
+    - name: Grid_Frame_52
       frameIndex: 52
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 3e0e7c3033c27104db2b9ef5ad933652
-    - name: Captain Clown Nose_Frame_53
+      spriteId: 270dfa552233c6a45b6588c8fedbfb04
+    - name: Grid_Frame_53
       frameIndex: 53
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 84289067af3458b44a6a010c64a76c62
-    - name: Captain Clown Nose_Frame_54
+      spriteId: 8b3015530aa53774ab49f432879f0e62
+    - name: Grid_Frame_54
       frameIndex: 54
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 557286e007b5cc74fbcc7e38da5480d8
-    - name: Captain Clown Nose_Frame_55
+      spriteId: 75ce5f30df9a2df4aa2eda060e78f5f7
+    - name: Grid_Frame_55
       frameIndex: 55
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 62bebcad1a6f8f44bb8e0e68da5e563f
-    - name: Captain Clown Nose_Frame_56
+      spriteId: 9be42dbf21ed46b459804b9d436aeb60
+    - name: Grid_Frame_56
       frameIndex: 56
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 6cff5b8b48080c44cb2f08bce9978d98
-    - name: Captain Clown Nose_Frame_57
+      spriteId: f01247291c676f645a1e61544f1d34b7
+    - name: Grid_Frame_57
       frameIndex: 57
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 44ac887d21c0a7f44b083ca53760ab11
-    - name: Captain Clown Nose_Frame_58
+      spriteId: 1ca82ec3bdca211469b648cc8f89658c
+    - name: Grid_Frame_58
       frameIndex: 58
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 5bc98db571b2ad148ba32603a31d978b
-    - name: Captain Clown Nose_Frame_59
+      spriteId: d58cb0be6786da54880db6431e5ff5ed
+    - name: Grid_Frame_59
       frameIndex: 59
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: a21abbef6dac9a74d86eb838035629a2
-    - name: Captain Clown Nose_Frame_60
+      spriteId: 277ef915d8ba53a45bf7e6cfbe5c5845
+    - name: Grid_Frame_60
       frameIndex: 60
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: d9fb05a00521f5740a3bf047881b6998
-    - name: Captain Clown Nose_Frame_61
+      spriteId: 8b353c0b4dd0cf14b99a0c35c8425faa
+    - name: Grid_Frame_61
       frameIndex: 61
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 465a7693882eb3147ad42ad03b853d96
-    - name: Captain Clown Nose_Frame_62
+      spriteId: 434b1f5b728d17c4a9f4d30267a81af6
+    - name: Grid_Frame_62
       frameIndex: 62
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 28cc6b99b6944c84fb6e4b2facb6a643
-    - name: Captain Clown Nose_Frame_63
+      spriteId: 6b24a39471e50144fb2788349ae769c1
+    - name: Grid_Frame_63
       frameIndex: 63
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 51988b56d9b42c04894bc24b27e68368
-    - name: Captain Clown Nose_Frame_64
+      spriteId: cd53a1b83a9a5bb48a7247c1a33cd4b9
+    - name: Grid_Frame_64
       frameIndex: 64
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 81f378d327772884baf2cc11dc8858c3
-    - name: Captain Clown Nose_Frame_65
+      spriteId: c0121de0c4919ae4e9a7164f422cc4b7
+    - name: Grid_Frame_65
       frameIndex: 65
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 1c1b79b35157c5944920701b68dab58e
-    - name: Captain Clown Nose_Frame_66
+      spriteId: 9d8169970b20aa74d942714086dc9a53
+    - name: Grid_Frame_66
       frameIndex: 66
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: c6c914ae82710494597548ed46c8a9db
-    - name: Captain Clown Nose_Frame_67
+      spriteId: b94cc35e4f528214382294822f1216d6
+    - name: Grid_Frame_67
       frameIndex: 67
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: a97a3c9d90dd6c04da1eb7b06b5fd304
-    - name: Captain Clown Nose_Frame_68
+      spriteId: da8c4d7096935934ab03f30d12287694
+    - name: Grid_Frame_68
       frameIndex: 68
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 5696374b1e9fb1c459b1611fde0061fa
-    - name: Captain Clown Nose_Frame_69
+      spriteId: 294e431df7b3f854385ebd45400dbfea
+    - name: Grid_Frame_69
       frameIndex: 69
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 5111ff759f9f24b438710f457e134483
-    - name: Captain Clown Nose_Frame_70
+      spriteId: 36f9ad7d61ba38040a143fc0695c07bf
+    - name: Grid_Frame_70
       frameIndex: 70
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 9cc96bc03a1cf8d4d96cb389ef0857ab
-    - name: Captain Clown Nose_Frame_71
+      spriteId: b794911e9d33d6d4ab727464fd3658f0
+    - name: Grid_Frame_71
       frameIndex: 71
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: ef1b84b38f2cbba40b05eb74d6d6733b
-    - name: Captain Clown Nose_Frame_72
+      spriteId: 0cbeaf6a156a44e429df24432511a07c
+    - name: Grid_Frame_72
       frameIndex: 72
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: b551e7f1fb1f1034ab3b99514bdb1c9f
-    - name: Captain Clown Nose_Frame_73
+      spriteId: b59abddf05bbde246919bb54b2c68f26
+    - name: Grid_Frame_73
       frameIndex: 73
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 72d9a9baa17b3834d8f8b6b8c68ac1d1
-    - name: Captain Clown Nose_Frame_74
+      spriteId: 39e42602be86b3347a5fc3a74b4b5d0f
+    - name: Grid_Frame_74
       frameIndex: 74
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 761a38f5732ae3d41b4458c53b6a9cb5
-    - name: Captain Clown Nose_Frame_75
+      spriteId: 93596a4d5bd1ab142b0ca81da675454c
+    - name: Grid_Frame_75
       frameIndex: 75
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: d394001393f348c4cb75cfe3a4080490
-    - name: Captain Clown Nose_Frame_76
+      spriteId: 00f47cefe4fd86946b621bb8a3015fa4
+    - name: Grid_Frame_76
       frameIndex: 76
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: d49de386243515a41b3b63a723a21f38
-    - name: Captain Clown Nose_Frame_77
+      spriteId: 4fe4fe37e43a4964ba7a180eb336da96
+    - name: Grid_Frame_77
       frameIndex: 77
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 0d654eebfec85a34388d2418b391fed0
-    - name: Captain Clown Nose_Frame_78
+      spriteId: 3fffff0d4b2e56648a8ebfdd2a29f0df
+    - name: Grid_Frame_78
       frameIndex: 78
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: ae95f3c4e6b715d41b1234f71db436da
-    - name: Captain Clown Nose_Frame_79
+      spriteId: 1f194247ce461af4e9131c66f0780154
+    - name: Grid_Frame_79
       frameIndex: 79
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: f7acbfa5bedd217468a97f406d4190dd
-    - name: Captain Clown Nose_Frame_80
+      spriteId: 0c56776be04fee0408a0afa320550cd1
+    - name: Grid_Frame_80
       frameIndex: 80
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: b6d4ca286ace31f4aa17d7625f2e3749
-    - name: Captain Clown Nose_Frame_81
+      spriteId: e0b0bf5369cdffe48bbafa932d6782a7
+    - name: Grid_Frame_81
       frameIndex: 81
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: c2d0be957189cbc4ab72bdf0ef1e3a51
-    - name: Captain Clown Nose_Frame_82
+      spriteId: f120f63c9d56a7842b1fc05bb95e7d73
+    - name: Grid_Frame_82
       frameIndex: 82
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: 480a1f67314c7ca41a22ef90fa00ddf1
-    - name: Captain Clown Nose_Frame_83
+      spriteId: 021b78beae67f6c4d8e649398b0378f9
+    - name: Grid_Frame_83
       frameIndex: 83
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 96
-      spriteId: abfb5a2da8bee0845aca0cefc4c52b3f
+      spriteId: 228502548fb2ac54b808bff1ac6e5719
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  - layerIndex: 1
+    guid: -662038049
+    name: Captain
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Captain_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 26
+        y: 32
+        width: 24
+        height: 28
+      spriteId: 110b10500a097c74e883b363e1c08bf1
+    - name: Captain_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 26
+        y: 32
+        width: 24
+        height: 27
+      spriteId: 120e002962bc85b458924912dd1d2aba
+    - name: Captain_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 26
+        y: 32
+        width: 24
+        height: 25
+      spriteId: 4c3c47952717b444d8fdf4722cfceb49
+    - name: Captain_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 26
+        y: 32
+        width: 24
+        height: 26
+      spriteId: 784b41724906e9a439877da267ef9d82
+    - name: Captain_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 26
+        y: 32
+        width: 24
+        height: 28
+      spriteId: d4287887a7ab65647bdca86b1d15b883
+    - name: Captain_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 26
+        y: 35
+        width: 24
+        height: 27
+      spriteId: 3254a200bd7722b4cba6672cdc0a0ae1
+    - name: Captain_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 26
+        y: 33
+        width: 24
+        height: 28
+      spriteId: de91e52709c80ad4ba23876b8686183d
+    - name: Captain_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 26
+        y: 32
+        width: 24
+        height: 26
+      spriteId: f11ad664f9906b746ad2dc096418e679
+    - name: Captain_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 25
+        y: 35
+        width: 25
+        height: 27
+      spriteId: ed8e95b9b900816459e9f06edafa63a9
+    - name: Captain_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 26
+        y: 33
+        width: 24
+        height: 28
+      spriteId: db61ea8698e3c6d48a443e790c7ce7fd
+    - name: Captain_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 26
+        y: 32
+        width: 24
+        height: 26
+      spriteId: d62164c45e925dd4e848e31fa8d6f0c1
+    - name: Captain_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 25
+        y: 34
+        width: 26
+        height: 27
+      spriteId: 609c6f6033fdf704aa34b7ff0e0cd6ca
+    - name: Captain_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 27
+        y: 32
+        width: 22
+        height: 31
+      spriteId: c988a7618ef02a14e97bb1832be38fb1
+    - name: Captain_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 26
+        y: 33
+        width: 24
+        height: 29
+      spriteId: cdfc499ce638bf24a9cc62bccd4e9461
+    - name: Captain_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 25
+        y: 33
+        width: 25
+        height: 28
+      spriteId: 871972aa9270bd545bed6917a2dbb38a
+    - name: Captain_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 25
+        y: 32
+        width: 26
+        height: 23
+      spriteId: 86d706171493e7c48b91f206e998468c
+    - name: Captain_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 26
+        y: 32
+        width: 24
+        height: 27
+      spriteId: 12b2f5e77714d094db0eff40079791b2
+    - name: Captain_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 27
+        y: 33
+        width: 23
+        height: 28
+      spriteId: a11b900203c2e4842a48acf86cf184f7
+    - name: Captain_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 28
+        y: 32
+        width: 21
+        height: 30
+      spriteId: 6f52a10934625ab459448aa7db47cd5f
+    - name: Captain_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 26
+        y: 34
+        width: 25
+        height: 26
+      spriteId: f12e1c9635fa9544a85b4202d9032e94
+    - name: Captain_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 27
+        y: 33
+        width: 23
+        height: 28
+      spriteId: e12e3481c99070f4eb7023baacb697d8
+    - name: Captain_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 24
+        y: 33
+        width: 27
+        height: 23
+      spriteId: 1491b5625a80bef4d820b80e4f814d8f
+    - name: Captain_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 25
+        y: 32
+        width: 25
+        height: 25
+      spriteId: 1402e07f93261824faa14fc3efca74d6
+    - name: Captain_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 23
+        y: 34
+        width: 29
+        height: 21
+      spriteId: 4fa1992b746c8c54f90f11248b480cba
+    - name: Captain_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 24
+        y: 33
+        width: 27
+        height: 23
+      spriteId: ceb31e6c71f129046ab8dc8440b66608
+    - name: Captain_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 23
+        y: 30
+        width: 29
+        height: 18
+      spriteId: dde55b2346971024e8413452a165cfe1
+    - name: Captain_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 25
+        y: 30
+        width: 25
+        height: 24
+      spriteId: 8b2307b3b445b45439ec640da6b2761b
+    - name: Captain_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 24
+        y: 30
+        width: 27
+        height: 21
+      spriteId: 8343fc6532ede99418a825db258e5afb
+    - name: Captain_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 24
+        y: 30
+        width: 27
+        height: 20
+      spriteId: c925e93821b6eac428a69ac2c75bdde0
+    - name: Captain_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 26
+        y: 32
+        width: 37
+        height: 28
+      spriteId: 87812a1383d59404a8ababce725146cb
+    - name: Captain_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 26
+        y: 32
+        width: 37
+        height: 27
+      spriteId: d0811aa68a38f724d8b8621e566e0068
+    - name: Captain_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 26
+        y: 32
+        width: 37
+        height: 25
+      spriteId: 69e024ffef51a4343b6468c155260fac
+    - name: Captain_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 26
+        y: 32
+        width: 37
+        height: 26
+      spriteId: 22419c118a4e3934e850aca2b03cb785
+    - name: Captain_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 26
+        y: 32
+        width: 37
+        height: 28
+      spriteId: f1168dfca9fd6a940a15d8f8085f212d
+    - name: Captain_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 26
+        y: 35
+        width: 35
+        height: 27
+      spriteId: 9cbd98cac0b8ac940a5c564d8c57eec7
+    - name: Captain_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 26
+        y: 33
+        width: 35
+        height: 28
+      spriteId: 7cb0376e782f5b64193cc7ca87da3f58
+    - name: Captain_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 26
+        y: 32
+        width: 37
+        height: 26
+      spriteId: 358794910085a4c46b1473039b464856
+    - name: Captain_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 25
+        y: 35
+        width: 39
+        height: 27
+      spriteId: defad134bfa76bd4495867d4790b03db
+    - name: Captain_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 26
+        y: 33
+        width: 38
+        height: 28
+      spriteId: 76af86b388599d5469f796f4f0982bb9
+    - name: Captain_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 26
+        y: 32
+        width: 37
+        height: 26
+      spriteId: 0041594d098dfd447a2936b9e4277143
+    - name: Captain_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 25
+        y: 34
+        width: 28
+        height: 27
+      spriteId: 315a317b680340a40bc1d0ff1fcb1890
+    - name: Captain_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 27
+        y: 32
+        width: 24
+        height: 31
+      spriteId: 6160c76e505ba034f9c8406b2d422de7
+    - name: Captain_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 26
+        y: 33
+        width: 26
+        height: 29
+      spriteId: 11240b193ddec8741867f70672666078
+    - name: Captain_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 25
+        y: 33
+        width: 38
+        height: 28
+      spriteId: 96182d3578eb56b41bb744629c7f4908
+    - name: Captain_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 25
+        y: 32
+        width: 39
+        height: 23
+      spriteId: b697d6f66f17e9c4292c00b0a76e6002
+    - name: Captain_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 26
+        y: 32
+        width: 37
+        height: 27
+      spriteId: aa4693fb9fffa8a489dfe96d209df009
+    - name: Captain_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 27
+        y: 33
+        width: 36
+        height: 28
+      spriteId: bf540e4efd090cf459ba9084338e90bf
+    - name: Captain_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 28
+        y: 32
+        width: 33
+        height: 30
+      spriteId: 8285f3b2c136b174c8b54ef6ecac45a8
+    - name: Captain_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 26
+        y: 34
+        width: 38
+        height: 26
+      spriteId: 938a249cfc703514e88fe892f72d587f
+    - name: Captain_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 27
+        y: 33
+        width: 36
+        height: 28
+      spriteId: d6ccc626467c2ad4c8cda28bef6887d1
+    - name: Captain_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 26
+        y: 32
+        width: 31
+        height: 27
+      spriteId: b5916459b5cd45d458149194311a6496
+    - name: Captain_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 27
+        y: 33
+        width: 43
+        height: 28
+      spriteId: 8d2b362bb5d37c84f8159d590d9ca933
+    - name: Captain_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 27
+        y: 32
+        width: 39
+        height: 28
+      spriteId: df9619dcffae2474ab042b34ad6b1402
+    - name: Captain_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 26
+        y: 32
+        width: 26
+        height: 30
+      spriteId: 310d30ca681c6cd44bc7318bace2a602
+    - name: Captain_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 27
+        y: 25
+        width: 39
+        height: 37
+      spriteId: 8b26f3a73143e884482885257290fc36
+    - name: Captain_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 27
+        y: 32
+        width: 37
+        height: 28
+      spriteId: 19954836d0066b24b8975a1ce70db5b4
+    - name: Captain_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 24
+        y: 32
+        width: 25
+        height: 28
+      spriteId: f5560e661c5b0bd43b0566e88db9e29e
+    - name: Captain_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 28
+        y: 34
+        width: 38
+        height: 29
+      spriteId: 6d25aab43d52ac54f94e97a329ffdf08
+    - name: Captain_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 26
+        y: 33
+        width: 38
+        height: 29
+      spriteId: 03cad3ff120956c4ea43801de60e0d58
+    - name: Captain_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 24
+        y: 26
+        width: 32
+        height: 35
+      spriteId: f754dcd2eb3b3c143b0ca85fc14a8630
+    - name: Captain_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 24
+        y: 33
+        width: 26
+        height: 28
+      spriteId: 89b8f479c3f413e44bd820e34b8fc571
+    - name: Captain_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 24
+        y: 33
+        width: 26
+        height: 28
+      spriteId: e2996fa161b9a504eae7c61a89329fcd
+    - name: Captain_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 25
+        y: 24
+        width: 38
+        height: 37
+      spriteId: 564e2442d5df06f4da3619b4735249bf
+    - name: Captain_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 25
+        y: 33
+        width: 38
+        height: 28
+      spriteId: 129fe0748bdc39b4eaf76f3a7692eb60
+    - name: Captain_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 25
+        y: 33
+        width: 38
+        height: 28
+      spriteId: 2b2c0b5288af8764d9c3020666b0582e
+    - name: Captain_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 26
+        y: 32
+        width: 26
+        height: 31
+      spriteId: ba7dc028235b83443a11bbfed22953b5
+    - name: Captain_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 26
+        y: 35
+        width: 26
+        height: 28
+      spriteId: 398d00a1b2d13754bb784ffe0400cdd0
+    - name: Captain_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 26
+        y: 34
+        width: 24
+        height: 28
+      spriteId: 9e7eb99df97d26949b1410a045a2edbd
+    - name: Captain_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 39
+        y: 44
+        width: 19
+        height: 7
+      spriteId: 09fdd1ac98faae1469771b9667da6470
+    - name: Captain_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 39
+        y: 44
+        width: 19
+        height: 7
+      spriteId: b929d8169b05e8f46b54a5ef18759139
+    - name: Captain_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 39
+        y: 44
+        width: 19
+        height: 7
+      spriteId: 02c9a51b1b908734f90f79cdbb6f3a86
+    - name: Captain_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 39
+        y: 44
+        width: 19
+        height: 7
+      spriteId: a63e6cb2c692e184ba2ceeca4b05bf55
+    - name: Captain_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 39
+        y: 44
+        width: 19
+        height: 7
+      spriteId: 751cb205723b5d04ba17fcc3a8f6e035
+    - name: Captain_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 39
+        y: 44
+        width: 19
+        height: 7
+      spriteId: 6fca176fb649af54da0424bb97d6a602
+    - name: Captain_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 39
+        y: 44
+        width: 19
+        height: 7
+      spriteId: 4ce6f85bee4f32b42ab65c283e1fb293
+    - name: Captain_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 39
+        y: 44
+        width: 19
+        height: 7
+      spriteId: 4600fcdc59c68eb4ca6ec08808e63b4c
+    - name: Captain_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 39
+        y: 41
+        width: 19
+        height: 14
+      spriteId: 794f6957e9bde6049bd39a6a8482e088
+    - name: Captain_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 42
+        y: 38
+        width: 14
+        height: 19
+      spriteId: 90ea82fd0320074498dd795bdd50872c
+    - name: Captain_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 39
+        y: 40
+        width: 19
+        height: 14
+      spriteId: e13ea60989fb27644ae79386014c10aa
+    - name: Captain_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 41
+        y: 38
+        width: 14
+        height: 19
+      spriteId: ecaf06c9225857a4fb975ffe3135e8a8
+    - name: Captain_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 53
+        y: 45
+        width: 11
+        height: 9
+      spriteId: 5b4c5eb96bf42da4bacc848b1ba5f0c6
+    - name: Captain_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 51
+        y: 42
+        width: 13
+        height: 8
+      spriteId: 7b8feb9b60581094b8315bce41ea238c
+    - name: Captain_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 50
+        y: 45
+        width: 14
+        height: 7
+      spriteId: 52e908397615ce8459af7e58750bcac5
+    - name: Captain_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 50
+        y: 44
+        width: 14
+        height: 7
+      spriteId: 581f0fd315d8f2243940e39cf6abc4aa
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 2
+    guid: -1890551791
+    name: Effect
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Effect_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 56
+        y: 34
+        width: 5
+        height: 8
+      spriteId: 271d8ad8726f1b542ab2b595d2d84869
+    - name: Effect_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 67
+        y: 33
+        width: 14
+        height: 17
+      spriteId: 098c76625905b654ab3b1b409f0dd259
+    - name: Effect_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 78
+        y: 38
+        width: 6
+        height: 8
+      spriteId: d0ee2116acf2b784181c3834895fa3e8
+    - name: Effect_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 51
+        y: 54
+        width: 5
+        height: 10
+      spriteId: 4791a5c06dd972b4592301c40a12c633
+    - name: Effect_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 58
+        y: 27
+        width: 22
+        height: 33
+      spriteId: 7cfb72fd2fcca3140b4cdeaa3fb45900
+    - name: Effect_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 84
+        y: 31
+        width: 5
+        height: 16
+      spriteId: 23a9b0f0730ef3446bbef2308c1bfdff
+    - name: Effect_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 47
+        y: 30
+        width: 6
+        height: 11
+      spriteId: f343678fc24f98146ba4acb7734e101f
+    - name: Effect_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 61
+        y: 34
+        width: 19
+        height: 32
+      spriteId: 70df8638d811e0746ad0d13647f97930
+    - name: Effect_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 81
+        y: 44
+        width: 8
+        height: 19
+      spriteId: 9e587509cd4094043afec0f9fb1c6bec
+    - name: Effect_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 42
+        y: 15
+        width: 22
+        height: 21
+      spriteId: 198d4377258ed714a8f7fd8a3cdbd7fa
+    - name: Effect_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 51
+        y: 10
+        width: 12
+        height: 9
+      spriteId: 1e05f009bf35fac41bcdb82a05f92e0c
+    - name: Effect_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 44
+        y: 18
+        width: 27
+        height: 21
+      spriteId: 69325b4405457d540b2ebe4775ae14fb
+    - name: Effect_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 64
+        y: 16
+        width: 11
+        height: 11
+      spriteId: 08eb218d1cae2ac439f8f2c91e276395
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 96, y: 96}
