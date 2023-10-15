@@ -5,6 +5,8 @@ using UnityEngine;
 public class EventAnimation : MonoBehaviour
 {
     public PlayerAttack playerAttack;
+    public MoveMentPlayer moveMentPlayer;
+    public AnimationPlayer animatinPlayer;
 
     public void StartAnimationFromPlayerAttack()
     {
@@ -13,5 +15,13 @@ public class EventAnimation : MonoBehaviour
     public void EndAnimationFromPlayerAttack()
     {
         playerAttack.EndAnim();
+    }
+    public void DelayGroundAnimation()
+    {
+        moveMentPlayer.DelayFall();
+    }
+    public void EmitRunParticle()
+    {
+        animatinPlayer.EmitRunParticle();
     }
 }

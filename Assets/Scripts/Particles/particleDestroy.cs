@@ -14,4 +14,9 @@ public class particleDestroy : MonoBehaviour
     {
         ObjectPool.instance.Return(gameObject);
     }
+
+    private void OnDisable()
+    {
+        transform.DOKill();
+    }
 }

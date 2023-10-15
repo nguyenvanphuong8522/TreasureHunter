@@ -6,6 +6,7 @@ using System;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
+
     [SerializeField] private AudioSource musicSource, sfxSource;
     [SerializeField] private Sound[] musicSounds, sfxSounds;
     private void Awake()

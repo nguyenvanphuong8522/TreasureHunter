@@ -6,62 +6,29 @@ using UnityEngine;
 public class MoveMentPlayer : MonoBehaviour
 {
     public float horizontal;
-    private float speed;
-    [SerializeField] private InputMobile inputMobile;
-    public float jumpPower = 16f;
+    public float speed;
+    private float jumpPower;
     private bool isFacingRight = true;
     public bool doubleJump;
 
+    [SerializeField] private InputMobile inputMobile;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private AnimationPlayer animationPlayer;
-    [SerializeField] private GameObject jumpParticle;
-    [SerializeField] private GameObject moveParticle;
-    [SerializeField] private bool falled = false;
     [SerializeField] private PlayerAttack playerAttack;
-    private AudioManager audioManager;
 
+    public bool falled = false;
+    private AudioManager audioManager;
     public bool grounded = false;
 
     private void Start()
     {
-        speed = 6f;
-        jumpPower = 20f;
+        horizontal = 0;
+        speed = 5f;
+        jumpPower = 18f;
         audioManager = AudioManager.instance;
-        StartCoroutine(RunParticle());
     }
     void Update()
     {
-        if (IsGrounded())
-        {
-            if (!playerAttack.attacking)
-            {
-                if (horizontal != 0)
-                {
-                    animationPlayer.ChangeAnimationState("run02");
-                }
-                else
-                {
-                    animationPlayer.ChangeAnimationState("idle02");
-                }
-            }
-            if (!falled)
-            {
-                audioManager.PlaySfx("fall");
-                GameObject newParticle = ObjectPool.instance.Get(ObjectPool.instance.fallParticle);
-                newParticle.SetActive(true);
-                newParticle.transform.position = transform.position + new Vector3(0, -0.18f, 0);
-                newParticle.transform.localScale = new Vector3(5f, 5f, 1);
-                animationPlayer.ChangeAnimationState("idle02");
-                falled = true;
-            }
-
-        }
-        else
-        {
-            if (!playerAttack.attacking)
-            animationPlayer.ChangeAnimationState("fall02");
-        }
-
         if (!inputMobile.isMoving)
         {
             horizontal = Input.GetAxisRaw("Horizontal");
@@ -74,52 +41,35 @@ public class MoveMentPlayer : MonoBehaviour
         Flip();
     }
 
-    IEnumerator RunParticle()
-    {
-        while (true)
-        {
-            if (IsGrounded() && horizontal != 0 && !playerAttack.attacking)
-            {
-                audioManager.PlaySfx("footstep");
-                GameObject newParticle = ObjectPool.instance.Get(ObjectPool.instance.moveParticle);
-                newParticle.SetActive(true);
-                newParticle.transform.position = transform.position + new Vector3(0, -0.1f, 0);
-                newParticle.transform.localScale = new Vector3(5f, 5f, 1);
-                Vector3 _localScale = newParticle.transform.localScale;
-                newParticle.transform.localScale = new Vector3(_localScale.x * transform.localScale.x, _localScale.y, _localScale.z);
-            }
-            yield return new WaitForSeconds(0.25f);
-        }
-    }
     public void JumpUp()
     {
-        if (IsGrounded() || doubleJump)
+        if (grounded || doubleJump)
         {
-            if (!playerAttack.attacking)
+            if (!playerAttack.isAttackPressed)
             {
-                animationPlayer.ChangeAnimationState("jump02");
                 rb.velocity = new Vector2(rb.velocity.x, jumpPower);
                 doubleJump = !doubleJump;
 
                 audioManager.PlaySfx("jump");
-                GameObject newParticle = ObjectPool.instance.Get(ObjectPool.instance.jumpParticle);
-                newParticle.SetActive(true);
-                newParticle.transform.position = transform.position + new Vector3(0, -0.1f, 0);
-                newParticle.transform.localScale = new Vector3(5f, 5f, 1);
+                animationPlayer.EmitParticle("jumpParticle", new Vector3(0, -0.1f, 0), new Vector3(5f, 5f, 1));
             }
         }
     }
 
     public void SetDoubleJump()
     {
-        if(grounded && !Input.GetButton("Jump"))
+        if(!inputMobile.jumbutton)
         {
-            doubleJump = false;
+            if (grounded && (!Input.GetButton("Jump")))
+            {
+                doubleJump = false;
+            }
         }
+        
     }
     private void FixedUpdate()
     {
-        if (!playerAttack.isAttackPressed)
+        if (!playerAttack.attacking)
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
         }
@@ -127,10 +77,6 @@ public class MoveMentPlayer : MonoBehaviour
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
-    }
-    public bool IsGrounded()
-    {
-        return grounded;
     }
     private void Flip()
     {
@@ -143,13 +89,6 @@ public class MoveMentPlayer : MonoBehaviour
         }
     }
 
-    public void EmitParticleMovement(string nameParticle, Vector3 offsetPos)
-    {
-        GameObject newParticle = ObjectPool.instance.Get(ObjectPool.instance.fallParticle);
-        newParticle.SetActive(true);
-        newParticle.transform.position = transform.position + new Vector3(0, -0.18f, 0);
-        newParticle.transform.localScale = new Vector3(5f, 5f, 1);
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
@@ -167,6 +106,12 @@ public class MoveMentPlayer : MonoBehaviour
         {
             grounded = false;
             falled = false;
+            animationPlayer.falledAnim = false;
         }
     }
+    public void DelayFall()
+    {
+        animationPlayer.falledAnim = true;
+    }
+
 }

@@ -7,7 +7,7 @@ public class InputMobile : MonoBehaviour
 {
     [SerializeField] private MoveMentPlayer movementPlayer;
     public bool isMoving = false;
-    public int isJumping = 0;
+    public bool jumbutton;
 
     public void MoveLeft()
     {
@@ -18,19 +18,21 @@ public class InputMobile : MonoBehaviour
     {
         movementPlayer.horizontal = 0;
         isMoving = false;
-        isJumping = 0;
+        jumbutton = false;
     }
     public void MoveRight()
     {
         movementPlayer.horizontal = 1;
         isMoving = true;
     }
-    public void JumpUp()
+
+    public void Jump()
     {
-        isJumping = -1;
+        jumbutton = true;
     }
-    public void JumpDown()
+
+    public void JumpExit()
     {
-        isJumping = 1;
+        jumbutton = false;
     }
 }
