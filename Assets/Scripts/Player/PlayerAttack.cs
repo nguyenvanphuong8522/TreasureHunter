@@ -1,8 +1,5 @@
-using DG.Tweening;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -10,11 +7,12 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private GameObject attackArea;
     [SerializeField] private MoveMentPlayer moveMentPlayer;
     [SerializeField] private CamShake camShake;
+
+    public int atk;
     public bool attacking = false;
-    public bool isAttackPressed = true;
-    public float isAttakDelay = 0.3f;
     public int combo = 0;
     private IEnumerator delayResetCombo;
+
     private void Start()
     {
         delayResetCombo = DelayResetCombo(0);
@@ -26,11 +24,15 @@ public class PlayerAttack : MonoBehaviour
         {
             Attack();
         }
+        else if (Input.GetKeyDown(KeyCode.Z))
+        {
+            AttackRanged();
+        }
     }
 
-    public void SrartAnim()
+    public void DeLayAttackMelee()
     {
-        if(combo <2)
+        if (combo < 2)
         {
             delayResetCombo = DelayResetCombo(0.5f);
             StartCoroutine(delayResetCombo);
@@ -43,10 +45,14 @@ public class PlayerAttack : MonoBehaviour
         attacking = false;
         attackArea.SetActive(false);
     }
-    public void SrartAnimAir()
+    public void DeLayAttackAir()
     {
         attacking = false;
         attackArea.SetActive(false);
+    }
+    public void DeLayAttackRanged()
+    {
+        attacking = false;
     }
 
     IEnumerator DelayResetCombo(float time)
@@ -55,16 +61,9 @@ public class PlayerAttack : MonoBehaviour
         combo = 0;
     }
 
-    public void EndAnim()
-    {
-        isAttackPressed = false;
-        attacking = false;
-        attackArea.SetActive(attacking);
-        combo = 0;
-    }
     public void Attack()
     {
-        if(!attacking)
+        if (!attacking)
         {
             attacking = true;
             attackArea.SetActive(true);
@@ -75,17 +74,36 @@ public class PlayerAttack : MonoBehaviour
                 AudioManager.instance.PlaySfx("attack0" + combo);
                 animationPlayer.ChangeAnimationState("attack0" + combo);
                 EmitEffectSword(combo);
-                Invoke(nameof(SrartAnim), 0.3f);
+                Invoke(nameof(DeLayAttackMelee), 0.3f);
             }
             else if (!moveMentPlayer.grounded)
             {
-                AudioManager.instance.PlaySfx("attack01");
-                animationPlayer.ChangeAnimationState("attack01");
-                EmitEffectSword(1);
-                Invoke(nameof(SrartAnimAir), 0.4f);
+                AudioManager.instance.PlaySfx("attack02");
+                animationPlayer.ChangeAnimationState("attack02");
+                EmitEffectSword(2);
+                Invoke(nameof(DeLayAttackAir), 0.4f);
             }
         }
-        
+    }
+    public void AttackRanged()
+    {
+        if (!attacking)
+        {
+            attacking = true;
+            AudioManager.instance.PlaySfx("attackRanged");
+            animationPlayer.ChangeAnimationState("attackThrow");
+            Invoke(nameof(ThrowSword), 0.1f);
+            Invoke(nameof(DeLayAttackRanged), 0.4f);
+        }
+    }
+
+    public void ThrowSword()
+    {
+        GameObject newParticle = ObjectPool.instance.Get(ObjectPool.instance.swordParticles[3]);
+        newParticle.SetActive(true);
+        newParticle.transform.position = transform.position + new Vector3(1.5f * transform.localScale.x, 0.2f, 0);
+        newParticle.transform.localScale = new Vector3(transform.localScale.x * 5f, 5f, 1);
+        newParticle.GetComponent<SwordThrow>().camSake = camShake;
     }
     public void EmitEffectSword(int index)
     {
@@ -94,5 +112,16 @@ public class PlayerAttack : MonoBehaviour
         newParticle.transform.position = transform.position + new Vector3(1.5f * transform.localScale.x, -0.2f, 0);
         newParticle.transform.SetParent(transform);
         newParticle.transform.localScale = new Vector3(5f, 5f, 1);
+    }
+
+    public void AtkPowerUp()
+    {
+        atk *= 2;
+        Invoke(nameof(DelayDecreaseAtk), 3);
+    }
+
+    public void DelayDecreaseAtk()
+    {
+        atk /= 2;
     }
 }

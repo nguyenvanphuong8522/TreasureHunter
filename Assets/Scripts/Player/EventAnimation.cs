@@ -10,15 +10,7 @@ public class EventAnimation : MonoBehaviour
 
     public void StartAnimationFromPlayerAttack()
     {
-        playerAttack.SrartAnim();
-    }
-    public void EndAnimationFromPlayerAttack()
-    {
-        playerAttack.EndAnim();
-    }
-    public void DelayGroundAnimation()
-    {
-        moveMentPlayer.DelayFall();
+        playerAttack.DeLayAttackMelee();
     }
     public void EmitRunParticle()
     {

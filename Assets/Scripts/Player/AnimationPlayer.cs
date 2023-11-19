@@ -16,7 +16,7 @@ public class AnimationPlayer : MonoBehaviour
     }
     private void Update()
     {
-        if(!playerAttack.attacking)
+        if (!moveMentPlayer.isTakeDamaging && !playerAttack.attacking)
         {
             if (moveMentPlayer.grounded)
             {
@@ -27,8 +27,9 @@ public class AnimationPlayer : MonoBehaviour
                         audioManager.PlaySfx("fall");
                         EmitParticle("fallParticle", new Vector3(0, -0.18f, 0), new Vector3(5, 5, 1));
                         moveMentPlayer.falled = true;
+                        ChangeAnimationState("groundS");
+                        Invoke(nameof(DelayAnimationGroundS), 0.2f);
                     }
-                    ChangeAnimationState("groundS");
                 }
                 else
                 {
@@ -47,6 +48,12 @@ public class AnimationPlayer : MonoBehaviour
                 ChangeAnimationState("jumps");
             }
         }
+    }
+
+
+    public void DelayAnimationGroundS()
+    {
+        falledAnim = true;
     }
     public void ChangeAnimationState(string newState)
     {

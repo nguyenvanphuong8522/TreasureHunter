@@ -12,6 +12,7 @@ public class particleDestroy : MonoBehaviour
     }
     public void DeActive()
     {
+        transform.SetParent(ObjectPool.instance.transform);
         ObjectPool.instance.Return(gameObject);
     }
 

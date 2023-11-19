@@ -78,6 +78,7 @@ public class ObjectPool : MonoBehaviour
     public Pool jumpParticle;
     public Pool fallParticle;
     public Pool moveParticle;
+    public Pool popUpDamage;
     public Pool[] swordParticles;
 
     public Dictionary<int, int> dicClones = new Dictionary<int, int>();
@@ -91,6 +92,7 @@ public class ObjectPool : MonoBehaviour
     private void Start()
     {
         pools.Add(jumpParticle);
+        pools.Add(popUpDamage);
         pools.Add(fallParticle);
         pools.Add(moveParticle);
         foreach (var item in swordParticles)

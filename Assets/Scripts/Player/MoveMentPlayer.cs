@@ -1,4 +1,3 @@
-using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,9 +9,10 @@ public class MoveMentPlayer : MonoBehaviour
     private float jumpPower;
     private bool isFacingRight = true;
     public bool doubleJump;
+    public bool isTakeDamaging;
 
     [SerializeField] private InputMobile inputMobile;
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] public Rigidbody2D rb;
     [SerializeField] private AnimationPlayer animationPlayer;
     [SerializeField] private PlayerAttack playerAttack;
 
@@ -45,7 +45,7 @@ public class MoveMentPlayer : MonoBehaviour
     {
         if (grounded || doubleJump)
         {
-            if (!playerAttack.isAttackPressed)
+            if (!playerAttack.attacking)
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpPower);
                 doubleJump = !doubleJump;
@@ -65,11 +65,10 @@ public class MoveMentPlayer : MonoBehaviour
                 doubleJump = false;
             }
         }
-        
     }
     private void FixedUpdate()
     {
-        if (!playerAttack.attacking)
+        if (!playerAttack.attacking && !isTakeDamaging)
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
         }
@@ -88,10 +87,15 @@ public class MoveMentPlayer : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+    public void DelayFall()
+    {
+        animationPlayer.falledAnim = true;
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("OneWay"))
         {
             Vector3 normal = collision.GetContact(0).normal;
             if (normal == Vector3.up)
@@ -102,16 +106,11 @@ public class MoveMentPlayer : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("OneWay"))
         {
-            grounded = false;
             falled = false;
             animationPlayer.falledAnim = false;
+            grounded = false;
         }
     }
-    public void DelayFall()
-    {
-        animationPlayer.falledAnim = true;
-    }
-
 }
