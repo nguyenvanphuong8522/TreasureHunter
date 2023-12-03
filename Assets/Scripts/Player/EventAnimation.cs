@@ -10,8 +10,14 @@ public class EventAnimation : MonoBehaviour
 
     public void StartAnimationFromPlayerAttack()
     {
-        playerAttack.DeLayAttackMelee();
+        StartCoroutine(Delay());
     }
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.3f);
+        playerAttack.DelayAttack();
+    }
+
     public void EmitRunParticle()
     {
         animatinPlayer.EmitRunParticle();

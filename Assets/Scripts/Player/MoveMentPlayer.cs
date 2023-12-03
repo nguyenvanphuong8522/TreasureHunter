@@ -29,16 +29,19 @@ public class MoveMentPlayer : MonoBehaviour
     }
     void Update()
     {
-        if (!inputMobile.isMoving)
+        if(GameManager.instance.gameState == GAMESTATE.START)
         {
-            horizontal = Input.GetAxisRaw("Horizontal");
+            if (!inputMobile.isMoving)
+            {
+                horizontal = Input.GetAxisRaw("Horizontal");
+            }
+            if (Input.GetButtonDown("Jump"))
+            {
+                JumpUp();
+            }
+            SetDoubleJump();
+            Flip();
         }
-        if (Input.GetButtonDown("Jump"))
-        {
-            JumpUp();
-        }
-        SetDoubleJump();
-        Flip();
     }
 
     public void JumpUp()
@@ -68,13 +71,16 @@ public class MoveMentPlayer : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (!playerAttack.attacking && !isTakeDamaging)
+        if (GameManager.instance.gameState == GAMESTATE.START)
         {
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-        }
-        else
-        {
-            rb.velocity = new Vector2(0, rb.velocity.y);
+            if (!playerAttack.attacking && !isTakeDamaging)
+            {
+                rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+            }
         }
     }
     private void Flip()
@@ -102,6 +108,13 @@ public class MoveMentPlayer : MonoBehaviour
             {
                 grounded = true;
             }
+        }
+        else if(collision.gameObject.CompareTag("Ground") && GameManager.instance.gameState == GAMESTATE.END)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezePosition;
+            animationPlayer.ChangeAnimationState("deadGround");
+            
+
         }
     }
     private void OnCollisionExit2D(Collision2D collision)

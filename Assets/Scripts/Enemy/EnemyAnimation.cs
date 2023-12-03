@@ -13,4 +13,8 @@ public class EnemyAnimation : MonoBehaviour
         animator.Play(animationState);
         currentState = animationState;
     }
+    public void PlayAnimation(string state)
+    {
+        animator.Play(state);
+    }
 }

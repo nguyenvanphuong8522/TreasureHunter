@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 956348536253625453}
   - component: {fileID: 2862806994600415333}
   - component: {fileID: 1532303543000196333}
-  - component: {fileID: 3573860660927953968}
   - component: {fileID: 4760276041616502666}
   - component: {fileID: 4616511057335315754}
   - component: {fileID: 3728613953511808289}
@@ -235,27 +234,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!95 &3573860660927953968
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4752668404487575223}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b25220c644faf20409b8fe6cf7fb9365, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &4760276041616502666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +271,7 @@ MonoBehaviour:
   animator: {fileID: 8419449858756682885}
   playerAttack: {fileID: 3728613953511808289}
   moveMentPlayer: {fileID: 4760276041616502666}
+  sprite: {fileID: 0}
   currentState: 
   falledAnim: 1
 --- !u!114 &3728613953511808289
@@ -311,6 +290,7 @@ MonoBehaviour:
   attackArea: {fileID: 6131443488017752407}
   moveMentPlayer: {fileID: 4760276041616502666}
   camShake: {fileID: 0}
+  atk: 10
   attacking: 0
   combo: 0
 --- !u!114 &748108372702482131

@@ -13,27 +13,40 @@ public class HealthPlayer : MonoBehaviour
     {
         health = maxHealth;
     }
-
     public void TakeDame(int dame)
     {
-        health += dame;
-        EventManagerFuong<int>.TriggerEvent("UpdateHealBar", health);
-        EmitVfx(dame);
-        animationPlayer.ChangeAnimationState("hit");
-        moveMentPlayer.isTakeDamaging = true;
+        if (!animationPlayer.canBlink)
+        {
+            health += dame;
+            EventManagerFuong<int>.TriggerEvent("UpdateHealBar", health);
+            
+            if (health > 0)
+            {
+                EmitVfx(dame);
+                animationPlayer.ChangeAnimationState("hit");
+            }
+            else
+            {
+                GameManager.instance.gameState = GAMESTATE.END;
+                animationPlayer.EffectDead();
+            }
+            moveMentPlayer.isTakeDamaging = true;
+        }
     }
     public void EmitVfx(int damage)
     {
+
         EffectPopUpDamage(damage);
         AudioManager.instance.PlaySfx("takedame");
         //Handheld.Vibrate();
         Invoke(nameof(DelayTakeDame), 0.3f);
-        Invoke(nameof(StopVibrate), 0.1f);
+        //Invoke(nameof(StopVibrate), 0.1f);
     }
 
     public void DelayTakeDame()
     {
         moveMentPlayer.isTakeDamaging = false;
+        animationPlayer.SetCanBlink();
     }
 
     public void EffectPopUpDamage(int damage)

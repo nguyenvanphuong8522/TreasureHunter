@@ -30,21 +30,7 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    public void DeLayAttackMelee()
-    {
-        if (combo < 2)
-        {
-            delayResetCombo = DelayResetCombo(0.5f);
-            StartCoroutine(delayResetCombo);
-            combo++;
-        }
-        else
-        {
-            combo = 0;
-        }
-        attacking = false;
-        attackArea.SetActive(false);
-    }
+
     public void DeLayAttackAir()
     {
         attacking = false;
@@ -63,37 +49,64 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack()
     {
-        if (!attacking)
+        if (GameManager.instance.gameState == GAMESTATE.START)
         {
-            attacking = true;
-            attackArea.SetActive(true);
-            StopCoroutine(delayResetCombo);
-            if (moveMentPlayer.grounded)
+            if (!attacking)
             {
-                camShake.ShakeCam();
-                AudioManager.instance.PlaySfx("attack0" + combo);
-                animationPlayer.ChangeAnimationState("attack0" + combo);
-                EmitEffectSword(combo);
-                Invoke(nameof(DeLayAttackMelee), 0.3f);
-            }
-            else if (!moveMentPlayer.grounded)
-            {
-                AudioManager.instance.PlaySfx("attack02");
-                animationPlayer.ChangeAnimationState("attack02");
-                EmitEffectSword(2);
-                Invoke(nameof(DeLayAttackAir), 0.4f);
+                attacking = true;
+                attackArea.SetActive(true);
+                StopCoroutine(delayResetCombo);
+                if (moveMentPlayer.grounded)
+                {
+                    camShake.ShakeCam();
+                    AudioManager.instance.PlaySfx("attack0" + combo);
+                    animationPlayer.ChangeAnimationState("attack0" + combo);
+                    EmitEffectSword(combo);
+                    //Invoke(nameof(DeLayAttackMelee), 0.3f);
+                    StartCoroutine(DeLayAttackMelee(0.3f));
+                }
+                else if (!moveMentPlayer.grounded)
+                {
+                    AudioManager.instance.PlaySfx("attack02");
+                    animationPlayer.ChangeAnimationState("attack02");
+                    EmitEffectSword(2);
+                    Invoke(nameof(DeLayAttackAir), 0.4f);
+                }
             }
         }
     }
+    IEnumerator DeLayAttackMelee(float time)
+    {
+        yield return new WaitForSeconds(time);
+        DelayAttack();
+    }
+    public void DelayAttack()
+    {
+        if (combo < 2)
+        {
+            delayResetCombo = DelayResetCombo(0.5f);
+            StartCoroutine(delayResetCombo);
+            combo++;
+        }
+        else
+        {
+            combo = 0;
+        }
+        attacking = false;
+        attackArea.SetActive(false);
+    }
     public void AttackRanged()
     {
-        if (!attacking)
+        if (GameManager.instance.gameState == GAMESTATE.START)
         {
-            attacking = true;
-            AudioManager.instance.PlaySfx("attackRanged");
-            animationPlayer.ChangeAnimationState("attackThrow");
-            Invoke(nameof(ThrowSword), 0.1f);
-            Invoke(nameof(DeLayAttackRanged), 0.4f);
+            if (!attacking)
+            {
+                attacking = true;
+                AudioManager.instance.PlaySfx("attackRanged");
+                animationPlayer.ChangeAnimationState("attackThrow");
+                Invoke(nameof(ThrowSword), 0.1f);
+                Invoke(nameof(DeLayAttackRanged), 0.4f);
+            }
         }
     }
 

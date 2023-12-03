@@ -80,6 +80,7 @@ public class ObjectPool : MonoBehaviour
     public Pool moveParticle;
     public Pool popUpDamage;
     public Pool[] swordParticles;
+    public GameObject swordDead;
 
     public Dictionary<int, int> dicClones = new Dictionary<int, int>();
     public List<Pool> pools = new List<Pool>();
