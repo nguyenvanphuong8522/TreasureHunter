@@ -22,7 +22,7 @@ public class MovementEnemy : MonoBehaviour
         {
             if (Mathf.Abs(target.x - transform.position.x) > 0.1f)
             {
-                transform.Translate((target - transform.position).normalized * speed * Time.deltaTime);
+                transform.Translate((new Vector3(target.x, transform.position.y) - transform.position).normalized * speed * Time.deltaTime);
             }
             else
             {

@@ -7,9 +7,16 @@ public class GroundCheck : MonoBehaviour
     public MoveMentPlayer movementPlayer;
     public AnimationPlayer animationPlayer;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if(collision.CompareTag("Ground"))
+    //    {
+    //        movementPlayer.grounded = true;
+    //    }
+    //}
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.CompareTag("Ground"))
+        if (collision.CompareTag("Ground"))
         {
             movementPlayer.grounded = true;
         }

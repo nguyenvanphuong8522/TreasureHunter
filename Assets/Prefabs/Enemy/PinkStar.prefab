@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2877260238851584226}
   m_Layer: 0
-  m_Name: MushroomParent
+  m_Name: PinkStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,12 +109,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8105596405572938626}
     - target: {fileID: 2276684172442587079, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: dame
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276684172442587079, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
       propertyPath: boxCollider
       value: 
       objectReference: {fileID: 6619152219110246029}
     - target: {fileID: 2842086715105106463, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
       propertyPath: m_Name
-      value: Mushroom
+      value: PinkStar
       objectReference: {fileID: 0}
     - target: {fileID: 4239444312308483803, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
       propertyPath: rb
@@ -123,6 +127,10 @@ PrefabInstance:
     - target: {fileID: 4239444312308483803, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
       propertyPath: force
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239444312308483803, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: maxHeal
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4239444312308483803, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
       propertyPath: boxCollider
@@ -137,12 +145,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3827199834439056070}
     - target: {fileID: 5921143732688583202, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d4ad7d67fb10234aa31bd63cbaf0b4d, type: 3}
+    - target: {fileID: 5921143732688583202, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
       propertyPath: m_SortingLayer
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5921143732688583202, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
       propertyPath: m_SortingLayerID
       value: 1312771043
+      objectReference: {fileID: 0}
+    - target: {fileID: 7485351234871025347, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7485351234871025347, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7485351234871025347, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7485351234871025347, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
       propertyPath: m_LocalPosition.x
@@ -185,8 +209,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8622173836069230166, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: m_Size.x
+      value: 0.19500324
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622173836069230166, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: m_Size.y
+      value: 0.18440396
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622173836069230166, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.001231268
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622173836069230166, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.04220198
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622173836069230166, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622173836069230166, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622173836069230166, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -225,7 +273,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 6
+  m_GravityScale: 7
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -236,7 +284,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 0
 --- !u!95 &3768460010309377166
 Animator:
   serializedVersion: 5
@@ -247,7 +295,7 @@ Animator:
   m_GameObject: {fileID: 793460897026575044}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6acc7fe3031099347a6bedce0366cee9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 792ef78eed76f0545887bb0e53890c16, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -289,6 +337,18 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   speed: 1
   enemyAnimation: {fileID: 3827199834439056070}
+  healEnemy: {fileID: 1632104716193125888}
+--- !u!114 &1632104716193125888 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4239444312308483803, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+  m_PrefabInstance: {fileID: 3203166218678489307}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793460897026575044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162f9913e9e583f43951248e2cebf34a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5445593009881615896 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7485351234871025347, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}

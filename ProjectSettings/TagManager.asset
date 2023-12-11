@@ -8,6 +8,8 @@ TagManager:
   - OneWay
   - Enemy
   - AttackArea
+  - Coin
+  - PowerUp
   layers:
   - Default
   - TransparentFX
@@ -50,6 +52,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 3631492805
+    locked: 0
+  - name: TreeShadow
+    uniqueID: 76289371
     locked: 0
   - name: Ground
     uniqueID: 532915977

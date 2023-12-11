@@ -21,6 +21,12 @@ public class LevelManager : MonoBehaviour
 
     public void LoadScene(int index)
     {
-        SceneManager.LoadScene(index);
+        SceneManager.LoadSceneAsync(index);
+    }
+
+    public void RestartScene()
+    {
+        int curScene = SceneManager.GetActiveScene().buildIndex;
+        LoadScene(curScene);
     }
 }

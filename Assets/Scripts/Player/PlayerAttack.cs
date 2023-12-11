@@ -129,8 +129,14 @@ public class PlayerAttack : MonoBehaviour
 
     public void AtkPowerUp()
     {
-        atk *= 2;
-        Invoke(nameof(DelayDecreaseAtk), 3);
+        if(GameManager.instance.bottleAtk > 0)
+        {
+            atk *= 2;
+            GameManager.instance.bottleAtk--;
+            UiPresent.Instance.UpdateUiPresent();
+            Invoke(nameof(DelayDecreaseAtk), 3);
+        }
+       
     }
 
     public void DelayDecreaseAtk()

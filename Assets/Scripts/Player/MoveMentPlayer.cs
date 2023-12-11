@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MoveMentPlayer : MonoBehaviour
 {
+    public static MoveMentPlayer instance;
     public float horizontal;
     public float speed;
     private float jumpPower;
@@ -20,11 +21,15 @@ public class MoveMentPlayer : MonoBehaviour
     private AudioManager audioManager;
     public bool grounded = false;
 
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
         horizontal = 0;
         speed = 5f;
-        jumpPower = 18f;
+        jumpPower = 19f;
         audioManager = AudioManager.instance;
     }
     void Update()
@@ -101,29 +106,40 @@ public class MoveMentPlayer : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("OneWay"))
+        if (collision.gameObject.CompareTag("OneWay") && !grounded)
         {
             Vector3 normal = collision.GetContact(0).normal;
-            if (normal == Vector3.up)
+            if (/*normal == Vector3.up*/true)
             {
                 grounded = true;
             }
         }
-        else if(collision.gameObject.CompareTag("Ground") && GameManager.instance.gameState == GAMESTATE.END)
+        
+        if(collision.gameObject.CompareTag("Ground"))
         {
-            rb.constraints = RigidbodyConstraints2D.FreezePosition;
-            animationPlayer.ChangeAnimationState("deadGround");
-            
-
+            if(GameManager.instance.gameState == GAMESTATE.END)
+            {
+                animationPlayer.ChangeAnimationState("deadGround");
+                rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            }
+        }
+        if(collision.gameObject.CompareTag("Coin"))
+        {
+            collision.gameObject.SetActive(false);
+            GameManager.instance.coin++;
+            UiPresent.Instance.UpdateCoinText();
+            AudioManager.instance.PlaySfx("coin");
         }
     }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("OneWay"))
         {
-            falled = false;
-            animationPlayer.falledAnim = false;
+
             grounded = false;
+            //falled = false;
+            //animationPlayer.falledAnim = false;
         }
     }
 }

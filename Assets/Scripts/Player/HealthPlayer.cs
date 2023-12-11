@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class HealthPlayer : MonoBehaviour
@@ -29,9 +30,17 @@ public class HealthPlayer : MonoBehaviour
             {
                 GameManager.instance.gameState = GAMESTATE.END;
                 animationPlayer.EffectDead();
+                
+                StartCoroutine(DelayShowPopUp());
             }
             moveMentPlayer.isTakeDamaging = true;
         }
+    }
+
+    IEnumerator DelayShowPopUp()
+    {
+        yield return new WaitForSeconds(1);
+        UiPresent.Instance.ShowPopUp();
     }
     public void EmitVfx(int damage)
     {
@@ -63,14 +72,26 @@ public class HealthPlayer : MonoBehaviour
 
     public void HealPowerUp(int _heal)
     {
-        health += _heal;
-        EffectPopUpDamage(_heal);
-        EventManagerFuong<int>.TriggerEvent("UpdateHealBar", health);
+        if(GameManager.instance.bottleHeal > 0)
+        {
+            health += _heal;
+            GameManager.instance.bottleHeal--;
+            UiPresent.Instance.UpdateUiPresent();
+            EffectPopUpDamage(_heal);
+            EventManagerFuong<int>.TriggerEvent("UpdateHealBar", health);
+        }
+        
     }
     public void SpeedPowerUp()
     {
-        moveMentPlayer.speed *= 2;
-        Invoke(nameof(DelayDecreaseSpeed), 3);
+        if(GameManager.instance.bottleSpeed > 0)
+        {
+            moveMentPlayer.speed *= 2;
+            GameManager.instance.bottleSpeed--;
+            UiPresent.Instance.UpdateUiPresent();
+            Invoke(nameof(DelayDecreaseSpeed), 3);
+        }
+        
     }
 
     public void DelayDecreaseSpeed()
