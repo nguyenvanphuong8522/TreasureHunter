@@ -9,14 +9,14 @@ public class GroundCheck : MonoBehaviour
 
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
-    //    if(collision.CompareTag("Ground"))
+    //    if (collision.CompareTag("Ground") || collision.CompareTag("Box"))
     //    {
     //        movementPlayer.grounded = true;
     //    }
     //}
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ground"))
+        if (collision.CompareTag("Ground") || collision.CompareTag("Box"))
         {
             movementPlayer.grounded = true;
         }

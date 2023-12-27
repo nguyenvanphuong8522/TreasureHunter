@@ -130,6 +130,13 @@ public class MoveMentPlayer : MonoBehaviour
             UiPresent.Instance.UpdateCoinText();
             AudioManager.instance.PlaySfx("coin");
         }
+        if(collision.gameObject.CompareTag("Coin2"))
+        {
+            ObjectPool.instance.Return(collision.gameObject);
+            GameManager.instance.coin++;
+            UiPresent.Instance.UpdateCoinText();
+            AudioManager.instance.PlaySfx("coin");
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)

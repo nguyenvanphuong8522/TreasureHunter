@@ -9,11 +9,14 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private AudioSource musicSource, sfxSource;
     [SerializeField] private Sound[] musicSounds, sfxSounds;
+    public AudioSource[] soundSources;
+    private Queue<AudioSource> _queueSources;
     private void Awake()
     {
         if(instance == null)
         {
             instance = this;
+            _queueSources = new Queue<AudioSource>(soundSources);
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -45,10 +48,17 @@ public class AudioManager : MonoBehaviour
     {
         Sound sfx = Array.Find(sfxSounds, x => x.name == name);
 
-        if(sfx != null)
+
+        var source = _queueSources.Dequeue();
+        if (!source)
         {
-            sfxSource.clip = sfx.clip;
-            sfxSource.Play();
+            return;
+        }
+        
+        if (sfx != null)
+        {
+            source.PlayOneShot(sfx.clip);
+            _queueSources.Enqueue(source);
         }
         else
         {

@@ -67,7 +67,7 @@ public class HealthPlayer : MonoBehaviour
     }
     public void StopVibrate()
     {
-        Handheld.StopActivityIndicator();
+        //Handheld.StopActivityIndicator();
     }
 
     public void HealPowerUp(int _heal)

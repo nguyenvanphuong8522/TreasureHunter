@@ -80,6 +80,14 @@ public class ObjectPool : MonoBehaviour
     public Pool moveParticle;
     public Pool popUpDamage;
     public Pool[] swordParticles;
+    public Pool[] breaksBox;
+    public Pool[] breaksBoxBarrel;
+    public Pool[] bottles;
+    public Pool[] coins;
+    public Pool[] bullets;
+    public Pool[] seaShell;
+    public Pool[] cannons;
+    public Pool[] peaShooters;
     public GameObject swordDead;
 
     public Dictionary<int, int> dicClones = new Dictionary<int, int>();
@@ -97,6 +105,38 @@ public class ObjectPool : MonoBehaviour
         pools.Add(fallParticle);
         pools.Add(moveParticle);
         foreach (var item in swordParticles)
+        {
+            pools.Add(item);
+        }
+        foreach (var item in peaShooters)
+        {
+            pools.Add(item);
+        }
+        foreach (var item in cannons)
+        {
+            pools.Add(item);
+        }
+        foreach (var item in bullets)
+        {
+            pools.Add(item);
+        }
+        foreach (var item in coins)
+        {
+            pools.Add(item);
+        }
+        foreach (var item in seaShell)
+        {
+            pools.Add(item);
+        }
+        foreach (var item in breaksBox)
+        {
+            pools.Add(item);
+        }
+        foreach (var item in bottles)
+        {
+            pools.Add(item);
+        }
+        foreach (var item in breaksBoxBarrel)
         {
             pools.Add(item);
         }

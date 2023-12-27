@@ -4,7 +4,7 @@ using UnityEngine;
 public class SwordThrow : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float speed;
+    private float speed;
     public Animator animator;
     public BoxCollider2D box;
     public CamShake camSake;
@@ -27,11 +27,11 @@ public class SwordThrow : MonoBehaviour
         {
             speed = 0;
             animator.Play("embeded");
-            box.isTrigger = true;
             AudioManager.instance.PlaySfx("swordstop");
             camSake.ShakeCam();
         }
     }
+
     public void DisableSword()
     {
         ObjectPool.instance.Return(gameObject);

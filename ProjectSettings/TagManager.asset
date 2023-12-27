@@ -10,6 +10,10 @@ TagManager:
   - AttackArea
   - Coin
   - PowerUp
+  - Coin2
+  - Box
+  - Bullet
+  - Sword
   layers:
   - Default
   - TransparentFX
@@ -17,12 +21,12 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Box
+  - Player
+  - Coin
+  - Bullet
+  - PowerUp
+  - Enemy
   - 
   - 
   - 

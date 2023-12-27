@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.008685194
       objectReference: {fileID: 0}
+    - target: {fileID: 8105596405572938626, guid: 64e83e1bbc5fa634b9da1e2a08145849, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 9106223943914760953, guid: 64e83e1bbc5fa634b9da1e2a08145849, type: 3}
       propertyPath: m_Sprite
       value: 

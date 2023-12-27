@@ -9,7 +9,6 @@ public class HealEnemy : MonoBehaviour
     [SerializeField] public int currentHeal;
     [SerializeField] private Rigidbody2D rb;
     private float force;
-    [SerializeField] private MovementEnemy movementEnemy;
     [SerializeField] private BoxCollider2D boxCollider;
     public bool takeDamed;
 
@@ -27,22 +26,17 @@ public class HealEnemy : MonoBehaviour
             {
                 int atk = collision.gameObject.GetComponentInParent<PlayerAttack>().atk;
                 float x = collision.transform.parent.localScale.x;
-                float deltaX = transform.position.x - collision.transform.position.x;
-                if(deltaX > 0 && transform.localScale.x < 0)
-                {
-                    movementEnemy.Flip();
-                    movementEnemy.SetTarget(0);
-                }
-                else if(deltaX < 0 && transform.localScale.x > 0)
-                {
-                    movementEnemy.Flip();
-                    movementEnemy.SetTarget(1);
-                }
                 if (!takeDamed)
                 {
                     TakeDame(atk, new Vector2(x, 1));
                 }
             }
+        }
+        else if (collision.CompareTag("Sword"))
+        {
+            AudioManager.instance.PlaySfx("swordstop");
+            ObjectPool.instance.Return(collision.gameObject);
+            TakeDame(10, Vector2.up);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -58,8 +52,6 @@ public class HealEnemy : MonoBehaviour
             }
         }
     }
-
-
     public void TakeDame(int atk, Vector2 direcionAttackArea)
     {
         takeDamed = true;
@@ -106,26 +98,18 @@ public class HealEnemy : MonoBehaviour
     }
     IEnumerator DelayMovement()
     {
-        movementEnemy.speed = 0;
         yield return new WaitForSeconds(1);
-        movementEnemy.speed = 1f;
-        DelayAnimation();
-    }
-
-    public void DelayAnimation()
-    {
-        if (currentHeal > 0)
-        {
-            if (movementEnemy.speed == 0)
-                animationEnemy.ChangeAnimationState("idle");
-            else
-                animationEnemy.ChangeAnimationState("run");
-        }
     }
     public void Die()
     {
         animationEnemy.PlayAnimation("deadGround");
-        movementEnemy.speed = 0;
         boxCollider.enabled = false;
+        StartCoroutine(DelayEnableAnimator());
+    }
+    IEnumerator DelayEnableAnimator()
+    {
+        yield return new WaitForSeconds(1.5f);
+        animationEnemy.animator.enabled = false;
+        gameObject.SetActive(false);
     }
 }

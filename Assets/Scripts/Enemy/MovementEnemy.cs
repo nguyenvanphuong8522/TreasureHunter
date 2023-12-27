@@ -51,6 +51,7 @@ public class MovementEnemy : MonoBehaviour
     {
         speed = 1;
         Flip();
+        if(healEnemy.currentHeal > 0)
         enemyAnimation.ChangeAnimationState("run");
     }
 

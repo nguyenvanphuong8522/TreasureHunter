@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3752295503340537390}
   - component: {fileID: 3575227156553936343}
   - component: {fileID: 3687681586222362464}
-  m_Layer: 0
+  - component: {fileID: 1881198529694264097}
+  m_Layer: 10
   m_Name: BottleHeal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,3 +135,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
+--- !u!95 &1881198529694264097
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7834556646010767999}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb6c5a2c6d710784d9b5e20b742958a2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

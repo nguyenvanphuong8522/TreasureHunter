@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3561648845999434129}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2877260238851584226}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PinkStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2428571043365572331}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,6 +119,10 @@ PrefabInstance:
     - target: {fileID: 2842086715105106463, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
       propertyPath: m_Name
       value: PinkStar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842086715105106463, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4239444312308483803, guid: 4f6296d0977e12b42ba50c95708a9f33, type: 3}
       propertyPath: rb
@@ -284,7 +288,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &3768460010309377166
 Animator:
   serializedVersion: 5
