@@ -11,8 +11,9 @@ public class Peashooter : SeaShell
         break01.transform.localScale = Vector3.one * 5;
         break01.SetActive(true);
     }
-    public override void SpawnBullet(Vector3 pos)
+    public override IEnumerator SpawnBullet(Vector3 pos)
     {
+        yield return new WaitForSeconds(0.4f);
         GameObject x = ObjectPool.instance.Get(ObjectPool.instance.bullets[2]);
         x.transform.position = pos;
         x.SetActive(true);

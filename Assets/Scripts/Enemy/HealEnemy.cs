@@ -52,10 +52,25 @@ public class HealEnemy : MonoBehaviour
             }
         }
     }
+    public void SpawnEffectCollect(Vector3 pos, float time)
+    {
+        GameObject effect = ObjectPool.instance.Get(ObjectPool.instance.blood);
+        effect.transform.position = pos;
+        effect.transform.localScale = Vector3.one * 0.5f;
+        effect.SetActive(true);
+        StartCoroutine(DelayReturn(effect, time));
+    }
+
+    IEnumerator DelayReturn(GameObject x, float time)
+    {
+        yield return new WaitForSeconds(time);
+        ObjectPool.instance.Return(x);
+    }
     public void TakeDame(int atk, Vector2 direcionAttackArea)
     {
         takeDamed = true;
         currentHeal -= atk;
+        SpawnEffectCollect(transform.position, 1f);
         EffectHit(direcionAttackArea);
     }
     public void EffectHit(Vector2 direcionAttackArea)
@@ -104,6 +119,8 @@ public class HealEnemy : MonoBehaviour
     {
         animationEnemy.PlayAnimation("deadGround");
         boxCollider.enabled = false;
+        GameManager.instance.kill++;
+        GameManager.instance.UpdateScore(10);
         StartCoroutine(DelayEnableAnimator());
     }
     IEnumerator DelayEnableAnimator()

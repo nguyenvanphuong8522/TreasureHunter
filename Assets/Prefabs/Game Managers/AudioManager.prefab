@@ -47,7 +47,7 @@ AudioSource:
   m_Volume: 0.07
   m_Pitch: 1
   Loop: 1
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -845,6 +845,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: d4ce41bbf71a57d4ba9e957191204d6d, type: 3}
   - name: coin
     clip: {fileID: 8300000, guid: 2eb3dadce8177471996f94d099823504, type: 3}
+  - name: btnClick
+    clip: {fileID: 8300000, guid: 3787a8c081d804f02b539a5ca2d85af2, type: 3}
+  - name: boom
+    clip: {fileID: 8300000, guid: a75177b337c6a06409fec80619fa2d83, type: 3}
+  - name: shoot
+    clip: {fileID: 8300000, guid: e853b4bc49fbcc9439b8ba152b5aacce, type: 3}
   soundSources:
   - {fileID: 2687517125545548765}
   - {fileID: 8041316969254074322}

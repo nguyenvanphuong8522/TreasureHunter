@@ -14,7 +14,7 @@ public class MoveMentPlayer : MonoBehaviour
 
     [SerializeField] private InputMobile inputMobile;
     [SerializeField] public Rigidbody2D rb;
-    [SerializeField] private AnimationPlayer animationPlayer;
+    [SerializeField] public AnimationPlayer animationPlayer;
     [SerializeField] private PlayerAttack playerAttack;
 
     public bool falled = false;
@@ -123,19 +123,14 @@ public class MoveMentPlayer : MonoBehaviour
                 rb.constraints = RigidbodyConstraints2D.FreezeAll;
             }
         }
-        if(collision.gameObject.CompareTag("Coin"))
-        {
-            collision.gameObject.SetActive(false);
-            GameManager.instance.coin++;
-            UiPresent.Instance.UpdateCoinText();
-            AudioManager.instance.PlaySfx("coin");
-        }
+
         if(collision.gameObject.CompareTag("Coin2"))
         {
             ObjectPool.instance.Return(collision.gameObject);
             GameManager.instance.coin++;
             UiPresent.Instance.UpdateCoinText();
             AudioManager.instance.PlaySfx("coin");
+            
         }
     }
 
@@ -147,6 +142,32 @@ public class MoveMentPlayer : MonoBehaviour
             grounded = false;
             //falled = false;
             //animationPlayer.falledAnim = false;
+        }
+    }
+    public void SpawnEffectCollect(int index, Vector3 pos, float time)
+    {
+        GameObject effect = ObjectPool.instance.Get(ObjectPool.instance.collectEffects[index]);
+        effect.transform.position = pos;
+        effect.transform.localScale = Vector3.one * 5;
+        effect.SetActive(true);
+        StartCoroutine(DelayReturn(effect, time));
+    }
+
+    IEnumerator DelayReturn(GameObject x, float time)
+    {
+        yield return new WaitForSeconds(time);
+        ObjectPool.instance.Return(x);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            collision.gameObject.SetActive(false);
+            GameManager.instance.coin++;
+            SpawnEffectCollect(0, collision.gameObject.transform.position, 0.3f);
+            GameManager.instance.UpdateScore(1);
+            UiPresent.Instance.UpdateCoinText();
+            AudioManager.instance.PlaySfx("coin");
         }
     }
 }

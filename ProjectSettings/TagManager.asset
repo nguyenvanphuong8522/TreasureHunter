@@ -14,6 +14,7 @@ TagManager:
   - Box
   - Bullet
   - Sword
+  - Tutorial
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Bullet
   - PowerUp
   - Enemy
-  - 
+  - BreakBox
   - 
   - 
   - 

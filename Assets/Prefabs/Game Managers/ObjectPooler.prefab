@@ -246,5 +246,23 @@ MonoBehaviour:
     go: {fileID: 8157629132108949856, guid: 66b1bac9e23a62c429ba177713992343, type: 3}
     count: 0
     actives: []
+  collectEffects:
+  - name: 
+    go: {fileID: 972692324820678076, guid: cb95cb6fd3cbf7c4f99747735baa1c53, type: 3}
+    count: 0
+    actives: []
+  - name: 
+    go: {fileID: 7337789382925052742, guid: f64e27dec1f7b4444a9b1d9ea9ba493c, type: 3}
+    count: 0
+    actives: []
+  - name: 
+    go: {fileID: 7234970514594669706, guid: 7d58979cf06b19541a28e09d21058919, type: 3}
+    count: 0
+    actives: []
+  blood:
+    name: 
+    go: {fileID: 1812229218106390666, guid: ce6c15ab18efffe4294b620168e502ae, type: 3}
+    count: 0
+    actives: []
   swordDead: {fileID: 6716670898525837363, guid: 7422f55cca7894d4eb7c9fac87b3d90c, type: 3}
   pools: []

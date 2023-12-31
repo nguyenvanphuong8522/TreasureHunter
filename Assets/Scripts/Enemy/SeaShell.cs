@@ -92,10 +92,15 @@ public class SeaShell : MonoBehaviour
     {
         PlayAnimation("attack");
         StartCoroutine(DelayAnimation(0.4f));
-        SpawnBullet(pointShoot.position);
+        if (Vector2.Distance(MoveMentPlayer.instance.transform.position, transform.position) < 20)
+        {
+            AudioManager.instance.PlaySfx("shoot");
+            StartCoroutine(SpawnBullet(pointShoot.position));
+        }
     }
-    public virtual void SpawnBullet(Vector3 pos)
+    public virtual IEnumerator SpawnBullet(Vector3 pos)
     {
+        yield return new WaitForSeconds(0.4f);
         GameObject x = ObjectPool.instance.Get(ObjectPool.instance.bullets[0]);
         x.transform.position = pos;
         x.SetActive(true);

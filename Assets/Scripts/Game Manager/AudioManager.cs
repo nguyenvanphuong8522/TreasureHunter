@@ -11,22 +11,31 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private Sound[] musicSounds, sfxSounds;
     public AudioSource[] soundSources;
     private Queue<AudioSource> _queueSources;
+    private bool IsSoundOn;
     private void Awake()
     {
         if(instance == null)
         {
             instance = this;
             _queueSources = new Queue<AudioSource>(soundSources);
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
     }
-
+    public void ChangeMusicVolume()
+    {
+        if (musicSource != null)
+        {
+            musicSource.mute = !IsSoundOn;
+            //musicSource.volume = UserData.Music;
+        }
+    }
     private void Start()
     {
+        IsSoundOn = true;
         PlayMusic("theme");
     }
 
@@ -64,5 +73,10 @@ public class AudioManager : MonoBehaviour
         {
             Debug.Log("not found sfx");
         }
+    }
+
+    public void ButtonClick()
+    {
+        PlaySfx("btnClick");
     }
 }

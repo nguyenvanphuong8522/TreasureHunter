@@ -174,8 +174,8 @@ public static class Vibration
 
         if (isAndroid())
             vibrator.Call("vibrate", milliseconds);
-        //else
-        //    Handheld.Vibrate();
+/*        else
+           Handheld.Vibrate();*/
     }
 
     public static bool HasVibrator()

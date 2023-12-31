@@ -9,7 +9,8 @@ public class BottlePowerUp : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            if(id == 1)
+            MoveMentPlayer.instance.SpawnEffectCollect(1, collision.gameObject.transform.position, 0.4f);
+            if (id == 1)
             {
                 GameManager.instance.bottleHeal++;
             }

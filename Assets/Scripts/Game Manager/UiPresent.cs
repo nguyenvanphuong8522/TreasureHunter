@@ -7,10 +7,16 @@ public class UiPresent : MonoBehaviour
     public static UiPresent Instance;
     [SerializeField] private Slider healBar;
     public GameObject gameOverPanel;
+    public GameObject gameVictoryPanel;
     public TextMeshProUGUI coinText;
     public TextMeshProUGUI bottleHealText;
     public TextMeshProUGUI bottleSpeedText;
     public TextMeshProUGUI bottleAtkText;
+    public TextMeshProUGUI txtScore;
+    public TextMeshProUGUI txtScoreCur;
+    public TextMeshProUGUI txtScoreLose;
+    public TextMeshProUGUI txthighScore;
+    public TextMeshProUGUI txtKill;
     private void Awake()
     {
         Instance = this;
@@ -41,6 +47,13 @@ public class UiPresent : MonoBehaviour
     public void ShowPopUp()
     {
         gameOverPanel.SetActive(true);
+    }
+    public void ShowVictoryPopUp()
+    {
+        gameVictoryPanel.SetActive(true);
+        GameManager.instance.gameState = GAMESTATE.END;
+        MoveMentPlayer.instance.rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        MoveMentPlayer.instance.animationPlayer.ChangeAnimationState("idle02");
     }
     
     public void UpdateCoinText()

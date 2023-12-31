@@ -88,6 +88,8 @@ public class ObjectPool : MonoBehaviour
     public Pool[] seaShell;
     public Pool[] cannons;
     public Pool[] peaShooters;
+    public Pool[] collectEffects;
+    public Pool blood;
     public GameObject swordDead;
 
     public Dictionary<int, int> dicClones = new Dictionary<int, int>();
@@ -102,9 +104,14 @@ public class ObjectPool : MonoBehaviour
     {
         pools.Add(jumpParticle);
         pools.Add(popUpDamage);
+        pools.Add(blood);
         pools.Add(fallParticle);
         pools.Add(moveParticle);
         foreach (var item in swordParticles)
+        {
+            pools.Add(item);
+        }
+        foreach (var item in collectEffects)
         {
             pools.Add(item);
         }
